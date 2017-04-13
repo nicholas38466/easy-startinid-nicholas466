@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+}
+.footers{
+	background-color: grey;
+	text-align: center;
+	width: 100%;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #525252;
+	border-radius:5px;
+	margin-top: 10px;
+}
+a:hover{
+	background-color: #75797f;
+}
+
+.footers__content{
+
+}
+
+.footer__link{
+
+	width: 400px;
+	border-radius: 7px;
+	background-color: black;
+	opacity: 0.7;
+	border: 2px solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-left: calc(50% - 200px);
+}
+img{
+		width: 100%;
+		border-radius:5px;
+}

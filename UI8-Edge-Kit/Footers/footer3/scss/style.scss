@@ -1,0 +1,40 @@
+@font-face {
+    font-family: cabin;
+    src: url("./fonts/cabin-semibold.ttf");
+}
+body{ 
+	margin: 0;
+}
+.footer{
+	font-family: cabin;
+	background-color: #f2f5f8;
+	height: 288px;
+	width: 100%;
+	letter-spacing: 1px;
+}
+.footer a{
+	text-decoration: none;
+	color:#b4bbc2;
+	display: block;
+	margin-top: 10px;
+}
+a:hover{
+	color:#5a5a5a;
+}
+.footer__content{
+	height:100%;
+	color: #383737;
+	padding: 50px 190px 50px 120px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer img{
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+.user-menu,.services,.about-us,.copyrights{
+	float: left;
+}
+.user-name{
+	color: #65abd0;
+}

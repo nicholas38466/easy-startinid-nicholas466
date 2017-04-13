@@ -1,0 +1,92 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+.footer__content {
+  font-family: cabin;
+  background-color: #383737;
+  height: 288px;
+  width: 100%;
+  letter-spacing: 1px; }
+
+.footer__content a {
+  text-decoration: none;
+  color: #fff; }
+
+.footer__content a:hover {
+  color: #fff; }
+
+.footer__logo, .footer__menu,
+.footer__subskribing--folow-us__conteiner {
+  float: left;
+  margin-top: 55px; }
+
+.footer__logo {
+  float: left;
+  margin-left: 115px;
+  margin-top: 50px; }
+
+.footer__menu {
+  float: left;
+  margin-left: 65px;
+  margin-top: 55px; }
+
+.footer__menu a {
+  display: table;
+  color: #b4bbc2;
+  margin-top: 15px; }
+
+.footer__menu a:hover {
+  color: #fff; }
+
+.footer__menu__users-menu {
+  float: left; }
+
+.footer__menu__services {
+  float: left;
+  margin-left: 70px; }
+
+.footer__menu__about-us {
+  float: left;
+  margin-left: 60px; }
+
+.title {
+  color: #fff; }
+
+.footer__subskribing--folow-us__conteiner {
+  margin-left: 80px; }
+
+.footer__subskribing--folow-us__conteiner input {
+  margin-top: 20px;
+  padding-left: 7px;
+  height: 35px;
+  width: 170px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px; }
+
+.footer__subskribing--folow-us__conteiner button {
+  margin-left: 5px;
+  height: 37px;
+  width: 37px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #24aa98;
+  cursor: pointer; }
+
+.footer__subskribing--folow-us__conteiner button:hover {
+  background-color: #0c7b6c; }
+
+.folow-us {
+  margin-top: 30px; }
+
+.social-links {
+  margin-top: 20px; }
+
+.social-links a {
+  margin-right: 25px; }
+
+/*# sourceMappingURL=style.css.map */

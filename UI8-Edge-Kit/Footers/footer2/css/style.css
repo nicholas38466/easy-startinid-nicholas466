@@ -1,0 +1,114 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.footer {
+  font-family: cabin;
+  background-color: #f2f5f8;
+  height: 340px;
+  width: 100%; }
+
+.footer__content {
+  height: 100%;
+  color: #383737;
+  position: relative; }
+
+.footer__left-side {
+  position: absolute;
+  left: 120px;
+  top: 50px;
+  width: 450px; }
+
+.footer__title {
+  font-size: 24px; }
+
+.footer__text {
+  font-size: 18px;
+  margin-top: 15px; }
+
+.social-btn {
+  margin-top: 35px; }
+
+.btn--social {
+  border: 0;
+  border-radius: 5px;
+  min-width: 55px;
+  height: 28px;
+  margin-right: 10px;
+  color: #fff; }
+
+.btn--social img {
+  margin-right: 5px; }
+
+.btn-facebook {
+  background-color: #3162a2; }
+
+.btn-facebook:hover {
+  background-color: #06418e;
+  cursor: pointer; }
+
+.btn-twitter {
+  background-color: #2eb1eb; }
+
+.btn-twitter:hover {
+  background-color: #1288bc;
+  cursor: pointer; }
+
+.btn-dribbble {
+  background-color: #f552b6; }
+
+.btn-dribbble:hover {
+  background-color: #ca1283;
+  cursor: pointer; }
+
+.btn-linked-in {
+  background-color: #457ac0; }
+
+.btn-linked-in:hover {
+  background-color: #06418e;
+  cursor: pointer; }
+
+.footer-menu {
+  margin-top: 40px; }
+
+.footer-menu a {
+  color: #65abd0; }
+
+.footer-menu :first-child {
+  margin-right: 30px; }
+
+.footer-menu a:hover {
+  color: #26688b; }
+
+.footer__right-side {
+  position: absolute;
+  right: 120px;
+  top: 50px;
+  width: 450px; }
+
+.footer__right-side a {
+  color: #b4bbc2;
+  margin-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.footer__right-side a:hover {
+  color: #383737; }
+
+.services__links {
+  margin-left: 50px;
+  float: left;
+  margin-right: 50px; }
+
+.about-us__links {
+  margin-left: 50px; }
+
+/*# sourceMappingURL=style.css.map */

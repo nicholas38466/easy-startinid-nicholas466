@@ -1,0 +1,83 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+.footer__content {
+  font-family: cabin;
+  background-color: #24aa98;
+  height: 460px;
+  width: 100%;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center; }
+
+.footer__title {
+  font-size: 50px;
+  padding-top: 60px; }
+
+.footer__text {
+  margin-top: 50px; }
+
+.footer__form--sign-up {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 25px; }
+
+.footer__form--sign-up form {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #f2f5f8;
+  width: 660px;
+  height: 95px;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.footer__form--sign-up input {
+  padding-left: 15px;
+  height: 41px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #c6ccd2; }
+
+.footer__form--sign-up button {
+  font-family: cabin;
+  color: #fff;
+  height: 45px;
+  width: 140px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #d9c26c;
+  border: 0;
+  cursor: pointer; }
+
+.footer__form--sign-up button:hover {
+  background-color: #f0c420; }
+
+.footer__menu {
+  margin-top: 70px; }
+
+.footer__menu a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 65px; }
+
+.footer__menu a:hover {
+  color: #e4ed82; }
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aad7d0; }
+
+/*# sourceMappingURL=style.css.map */

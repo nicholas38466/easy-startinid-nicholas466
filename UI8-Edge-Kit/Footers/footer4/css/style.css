@@ -1,0 +1,67 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+.footer {
+  font-family: cabin;
+  background-color: #f2f5f8;
+  height: 288px;
+  width: 100%; }
+
+.footer a {
+  text-decoration: none;
+  color: #65abd0;
+  display: block;
+  margin-top: 10px; }
+
+a:hover {
+  color: #018e7b; }
+
+.footer__content {
+  height: 100%;
+  color: #b4bbc2;
+  padding: 50px 190px 50px 120px; }
+
+.logo, .contacts, .info, .our-app {
+  float: left; }
+
+.footers-title-name {
+  color: #383737;
+  margin-bottom: 20px; }
+
+.logo {
+  margin-top: -10px; }
+
+.contacts {
+  margin-left: 90px;
+  width: 185px; }
+
+.info {
+  margin-left: 50px;
+  width: 270px; }
+
+.address, .email {
+  margin-top: 30px; }
+
+.our-app {
+  margin-left: 50px; }
+
+.our-app button {
+  color: #fff;
+  border: 0;
+  background-color: #24aa98;
+  width: 140px;
+  height: 48px;
+  border-radius: 5px; }
+
+.our-app button:hover {
+  background-color: #018e7b;
+  cursor: pointer; }
+
+.our-app a {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

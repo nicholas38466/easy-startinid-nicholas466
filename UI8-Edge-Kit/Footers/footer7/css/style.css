@@ -1,0 +1,124 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+.footer__content {
+  font-family: cabin;
+  background-image: url(../images/Photo-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  letter-spacing: 1px;
+  color: #afb0b0;
+  position: relative; }
+
+.footer__content a {
+  text-decoration: none;
+  color: #afb0b0;
+  display: block;
+  margin-top: 12px; }
+
+.footer__content a:hover {
+  color: #fff; }
+
+.footer__content h3 {
+  color: #fff; }
+
+.logo {
+  float: left;
+  margin-left: 120px;
+  margin-top: 80px; }
+
+.footer__categories, .categories__women, .categories__men,
+.categories__kids {
+  float: left;
+  margin-top: 30px; }
+
+.categories__women {
+  margin-left: 90px; }
+
+.categories__men {
+  margin-left: 75px; }
+
+.categories__kids {
+  margin-left: 75px; }
+
+.footer__follow-subskribing {
+  float: left;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 260px; }
+
+.footer__follow-subskribing button {
+  height: 36px;
+  width: 36px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  margin-right: 5px; }
+
+.btn--social__fb {
+  background-color: #3162a2; }
+
+.btn--social__fb:hover {
+  background-color: #164d95; }
+
+.btn--social__tw {
+  background-color: #2eb1eb; }
+
+.btn--social__tw:hover {
+  background-color: #0e98d5; }
+
+.btn--social__dr {
+  background-color: #f552b6; }
+
+.btn--social__dr:hover {
+  background-color: #dc2093; }
+
+.btn--social__vm {
+  background-color: #3498b9; }
+
+.btn--social__vm:hover {
+  background-color: #06a6db; }
+
+.btn--social__ggl {
+  background-color: #f25c58; }
+
+.btn--social__ggl:hover {
+  background-color: #d53e3a; }
+
+.footer__subscribing {
+  margin-top: 50px; }
+
+.footer__subscribing input {
+  border-radius: 5px;
+  border: 0;
+  padding-left: 10px;
+  height: 35px;
+  width: 200px;
+  opacity: 0.3;
+  margin-top: 15px; }
+
+.footer__subscribing input:hover {
+  opacity: 0.8; }
+
+.footer__subscribing button {
+  background-color: #24aa98;
+  margin-left: 3px; }
+
+.footer__subscribing button:hover {
+  background-color: #018573; }
+
+.footer__menu {
+  margin-top: 40px; }
+
+.tm-info {
+  position: absolute;
+  bottom: 50px;
+  right: 120px; }
+
+/*# sourceMappingURL=style.css.map */

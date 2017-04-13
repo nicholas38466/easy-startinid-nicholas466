@@ -1,0 +1,84 @@
+@font-face {
+    font-family: cabin;
+    src: url("./fonts/cabin-semibold.ttf");
+}
+body{ 
+	margin: 0;
+}
+.footer__content{
+	font-family: cabin;
+	background-color: #383737;
+	height: 192px;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+	letter-spacing: 1px;
+}
+.footer__content a{
+	text-decoration: none;
+	color:#fff;
+	margin-left: 30px;
+
+}
+.footer__content a:hover{
+	color:#65659c;
+}
+
+.social-links{
+	margin-top: 40px;
+}
+.social-links button{
+	height: 35px;
+	width: 35px;
+	border-radius: 999rem;
+	border: 0;
+	margin-right: 20px;
+	line-height: none;
+	cursor: pointer;
+}
+
+.facebook-link{
+	background: #3162a2;
+}
+
+.twitter-link{
+	background: #2eb1eb;
+}
+
+.dribbble-link{
+	background: #f552b6;
+}
+
+.vimeo-link{
+	background: #3498b9;
+}
+
+.google-link{
+	background: #f25c58;
+}
+
+.facebook-link:hover{
+	background: #144f9d;
+}
+
+.twitter-link:hover{
+	background: #158ec3;
+}
+
+.dribbble-link:hover{
+	background: #cb278c;
+}
+
+.vimeo-link:hover{
+	background: #0b7ba0;
+}
+
+.google-link:hover{
+	background: #e8241f;
+}
+
+
+.tm-info{
+	color: #afaeae;
+	padding-top: 40px;
+}

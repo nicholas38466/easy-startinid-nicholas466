@@ -1,0 +1,102 @@
+@font-face {
+  font-family: cabin;
+  src: url("./fonts/cabin-semibold.ttf"); }
+
+body {
+  margin: 0; }
+
+.footer__content {
+  font-family: cabin;
+  height: 400px;
+  width: 100%;
+  letter-spacing: 1px;
+  color: #afb0b0;
+  background-color: #f2f5f8; }
+
+.footer__content a {
+  text-decoration: none;
+  color: #afb0b0;
+  display: block;
+  margin-top: 12px; }
+
+.footer__content a:hover {
+  color: #fff; }
+
+.footer__content h3 {
+  color: #000; }
+
+.footer__cubscribe-letters {
+  background-color: #24aa98;
+  height: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.footer__cubscribe-letters span {
+  color: #fff; }
+
+.footer__cubscribe-letters input {
+  height: 45px;
+  width: 305px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  font-family: cabin;
+  padding-left: 15px;
+  margin-left: 10px; }
+
+.footer__cubscribe-letters button {
+  height: 46px;
+  min-width: 180px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  font-family: cabin;
+  color: #fff;
+  background-color: #d9c26c;
+  margin-left: 15px;
+  cursor: pointer; }
+
+.footer__cubscribe-letters button:hover {
+  background-color: #dfbc39; }
+
+.logo {
+  margin-left: 115px;
+  margin-top: 50px;
+  float: left; }
+
+.services {
+  float: left;
+  margin-left: 70px;
+  margin-top: 30px; }
+
+.footer__map {
+  float: left;
+  margin-top: 45px;
+  margin-left: 80px; }
+
+.copyrights {
+  float: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 220px; }
+
+.footer__btn--email-us {
+  height: 36px;
+  min-width: 100px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  font-family: cabin;
+  color: #fff;
+  background-color: #65abd0;
+  cursor: pointer;
+  margin-top: 55px; }
+
+.footer__btn--email-us:hover {
+  background-color: #1190d4; }
+
+/*# sourceMappingURL=style.css.map */

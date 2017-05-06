@@ -1,0 +1,42 @@
+$global-font-icon: 'icon-font';
+
+@font-face {
+ font-family: $global-font-icon;
+ src:url("../dist/fonts/icon-font.eot");
+ src:url("../dist/fonts/icon-font.?#iefix") format("embedded-opentype"),
+   url("../dist/fonts/icon-font.woff") format("woff"),
+   url("../dist/fonts/icon-font.ttf") format("truetype"),
+   url("../dist/fonts/icon-font.#icon-font") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.icon {
+ font-family: $global-font-icon;
+
+ &:before {
+   /* Some common icon stuff */
+ }
+
+ &.icon--double-down {
+   &:before {
+     content: $icon-double-down;
+   }
+ }
+ &.icon--fb-logo {
+   &:before {
+     content: $icon-fb-logo;
+   }
+ }
+ &.icon--insta-logo {
+   &:before {
+     content: $icon-insta-logo;
+   }
+ }
+ &.icon--twitter-logo {
+   &:before {
+     content: $icon-twitter-logo;
+   }
+ }
+
+}

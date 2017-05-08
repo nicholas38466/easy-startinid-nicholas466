@@ -413,47 +413,46 @@ template {
   box-sizing: border-box; }
 
 body {
-  background-color: red;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none;
   text-transform: uppercase; }
 
 .home, .about-me, .portfolio, .contact {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-size: cover; }
 
+/*=======  HOME  ========*/
 .home {
   background-image: url(../../images/Background-home.jpg); }
   .home__content {
-    height: 90%;
+    height: 90vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: center;
-        align-items: center;
-    flex-direction: column; }
+        align-items: center; }
   .home__nav--link {
     color: #fff; }
-  .home__logotype {
+  .home__logo {
     margin-top: 80px;
-    width: 24%;
-    height: auto; }
+    height: 44vh;
+    width: auto; }
   .home__title {
     font-size: 60px;
     color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 40px; }
+    text-transform: uppercase; }
   .home__link-to-down {
     color: #fff; }
 
 .nav {
-  height: 10%;
+  height: 10vh;
   margin-left: 3.5%;
   margin-right: 3.5%;
   font-size: 24px;
@@ -479,7 +478,126 @@ a {
 .about-me__nav, .contact__nav {
   border-bottom: 1px solid #bebebe; }
 
+/*=====  ABOUT ME =====*/
+.about-me__nav--link {
+  color: #bebebe; }
+
+.about-me__nav--link:hover {
+  color: #000; }
+
+.about-me__content {
+  margin-top: 7vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.about-me__photo {
+  max-width: 40%;
+  max-height: 64vh;
+  margin-right: 1.5%; }
+
+.about-me__info {
+  max-width: 40%;
+  margin-left: 1.5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .about-me__info--title {
+    text-transform: uppercase; }
+
+.about-me__link-to-down {
+  color: #bebebe; }
+
+.about-me__link-to-down:hover {
+  color: #000; }
+
+.link-to-down--wrapper {
+  text-align: center;
+  margin-top: 8vh; }
+
+/*===  PORTFOLIO  ===*/
 .portfolio {
   background-image: url(../../images/Background-portfolio.jpg); }
+  .portfolio__nav--link {
+    color: #fff; }
+  .portfolio__title {
+    padding: 8vh 0 8vh 0;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase; }
+  .portfolio__gallery {
+    padding: 0 8.3% 0 8.3%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .portfolio__item {
+    margin-bottom: 2vw; }
+  .portfolio__link-to-down {
+    color: #fff;
+    padding-bottom: 20px; }
+
+/*=====  CONTACT  =====*/
+.contact {
+  position: relative; }
+  .contact__nav--link {
+    color: #bebebe; }
+  .contact__nav--link:hover {
+    color: #000; }
+  .contact__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .contact__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 50px 0 25px 0; }
+  .contact__link {
+    color: #000;
+    font-size: 60px; }
+
+.social-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.social--link {
+  color: #000;
+  border: 1px solid #000;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 0;
+  border-radius: 999rem; }
+
+.social--link:hover {
+  color: #fff;
+  background-color: #000; }
+
+.footer {
+  position: absolute;
+  margin-top: 20vh;
+  width: 93%;
+  height: 10vh;
+  margin-left: 3.5%;
+  bottom: 0;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-top: 1px solid #bebebe;
+  color: #bebebe; }
 
 /*# sourceMappingURL=main.css.map */

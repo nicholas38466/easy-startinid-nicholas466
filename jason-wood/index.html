@@ -17,7 +17,7 @@
 
 		<div class="home__content">
 			
-			<img src="./images/logo.png" class="home__logotype">
+			<img src="./images/logo.png" class="home__logo">
 						
 			<span class="home__title"><b>jwood</b>photography</span>
 			
@@ -26,8 +26,8 @@
 				<div class="icon icon--double-down icon--white"></div>
 			</a>
 			
-				</div>
 		</div>
+	</div>
 	
 	<div class="about-me" id="about-me">
 		<nav class="nav about-me__nav">
@@ -38,7 +38,8 @@
 		</nav>
 
 		<div class="about-me__content">
-			<div class="about-me__photo"><img src="./images/Jason-Wood.jpg" class="my-photo"></div>
+			
+			<img src="./images/Jason-Wood.jpg" class="my-photo about-me__photo">
 
 			<div class="about-me__info">
 				<div class="about-me__info--title">About Me</div>
@@ -46,12 +47,14 @@
 				<div class="about-me__info--signature">Jason Wood</div>
 			</div>
 
-			<a href="#porfolio" class="about-me__link-to-down link-to-down">
-				<span class="about-me__link-to-down--text link-to-down--text">keep scrolling, there is still more to come.</span>
-				<div class="icon icon--double-down icon--grey"></div>
-			</a>
-
 		</div>	
+
+		<div class="link-to-down--wrapper">
+			<a href="#portfolio" class="about-me__link-to-down link-to-down">
+					<span class="about-me__link-to-down--text link-to-down--text">keep scrolling, there is still more to come.</span>
+					<div class="icon icon--double-down icon--grey"></div>
+				</a>
+		</div>
 	</div>
 
 	<div class="portfolio" id="portfolio">
@@ -65,23 +68,45 @@
 		<div class="portfolio__content">
 			<div class="portfolio__title">portfolio</div>
 			
-			<div class="portfolio__photos">
-				<img src="./images/01.jpg" class="portfolio__photo">
-				<img src="./images/02.jpg" class="portfolio__photo">
-				<img src="./images/03.jpg" class="portfolio__photo">
-				<img src="./images/04.jpg" class="portfolio__photo">
-				<img src="./images/05.jpg" class="portfolio__photo">
-				<img src="./images/06.jpg" class="portfolio__photo">
-				<img src="./images/07.jpg" class="portfolio__photo">
-				<img src="./images/08.jpg" class="portfolio__photo">
-				<img src="./images/09.jpg" class="portfolio__photo">
-				<img src="./images/10.jpg" class="portfolio__photo">
+			<div class="portfolio__gallery">
+				<a href="#" class="portfolio__item">
+					<img src="./images/01.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/02.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/03.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/04.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/05.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/06.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/07.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/08.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/09.jpg">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="./images/10.jpg">
+				</a>
 			</div>
 			
-			<a href="#contact" class="portfolio__link-to-down link-to-down">
-				<span class="contact__link-to-down--text link-to-down--text">keep scrolling, there is still more to come.</span>
-				<div class="icon icon--double-down icon--white"></div>
-			</a>
+			<div class="link-to-down--wrapper">
+				<a href="#contact" class="portfolio__link-to-down link-to-down">
+					<span class="contact__link-to-down--text link-to-down--text">keep scrolling, there is still more to come.</span>
+					<div class="icon icon--double-down icon--white"></div>
+				</a>
+			</div>
 		</div>
 
 	</div>
@@ -97,19 +122,23 @@
 		<div class="contact__content">
 
 			<div class="contact__mail">
-				<span class="contact__title">mail:</span>
+
+				<div class="contact__title">mail:</div>
+
 				<a href="mailto:Jason@wood.com" class="contact__link contact__phone--link">Jason@wood.com</a>
 			</div>
 
 			<div class="contact__phone">
-				<span class="contact__title">phone:</span>
+
+				<div class="contact__title">phone:</div>
+
 				<a href="tel:+44212432444" class="contact__link contact__mail--link">+44 212 432 444</a>
 			</div>
 			
 
 			<div class="contact__social-media">
 
-				<span class="contact__title">social media:</span>
+				<div class="contact__title">social media:</div>
 
 				<div class="social-links">
 					<a href="#" class="icon icon--fb-logo social--link"></a>
@@ -122,7 +151,7 @@
 		</div>
 
 		<footer class="footer">
-			<span class="footer__text">Designed by Pawel Szymankiewicz</span>
+			<p class="footer__text">Designed by Pawel Szymankiewicz</p>
 			</footer>
 	</div>
 </body>

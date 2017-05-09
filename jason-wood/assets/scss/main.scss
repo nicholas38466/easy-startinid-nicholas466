@@ -1,6 +1,52 @@
 @import 'icons/iconfont';
 @import 'components/normalize';
 
+/*======TYPOGRAPHY=====*/
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.eot');
+    src: url('../fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_bold-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light-webfont.eot');
+    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_light-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'felt_tip_womanregular';
+    src: url('../fonts/felt_tip_woman-webfont.eot');
+    src: url('../fonts/felt_tip_woman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/felt_tip_woman-webfont.woff2') format('woff2'),
+         url('../fonts/felt_tip_woman-webfont.woff') format('woff'),
+         url('../fonts/felt_tip_woman-webfont.svg#felt_tip_womanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open-sanslight';
+    src: url('../fonts/open-sans-light.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -17,6 +63,42 @@ a{
 	width: 100%;
 	background-size: cover;
 }
+
+.nav{
+	height: 10vh;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__link{
+		margin: 0 1.3% 0 1.3%;
+		font-family: 'nexa_lightregular';
+	}
+}
+
+.link-to-down{
+	font-family: 'nexa_boldregular';
+	text-align: center;
+	font-size: 18px;
+
+}
+.icon{
+	font-size: 32px;
+}
+.home__nav,.porfolio__nav{
+	border-bottom: 1px solid #fff;
+}
+.about-me__nav,.contact__nav{
+	border-bottom: 1px solid #bebebe;
+}
+
+.link-to-down--wrapper{
+	text-align: center;
+	margin-top: 8vh;
+}
+
 /*=======  HOME  ========*/
 .home{
 	background-image: url(../../images/Background-home.jpg);
@@ -32,7 +114,7 @@ a{
 		color: #fff;
 	}
 	&__nav--link:hover{
-		
+		text-decoration: underline;
 	}
 	&__logo{
 		margin-top: 80px;
@@ -43,43 +125,15 @@ a{
 		font-size: 60px;
 		color: #fff;
 		text-transform: uppercase;
-		
+		font-family: 'nexa_lightregular';
 	}
 	&__link-to-down{
 		color: #fff;
 		
 	}
 	&__link-to-down:hover{
-		
+		color: #bebebe;
 	}
-}
-
-.nav{
-	height: 10vh;
-	margin-left: 3.5%;
-	margin-right: 3.5%;
-	font-size: 24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	&__link{
-		margin: 0 1.3% 0 1.3%;
-	}
-}
-
-.link-to-down{
-	text-align: center;
-	font-size: 18px;
-
-}
-.icon{
-	font-size: 32px;
-}
-.home__nav,.porfolio__nav{
-	border-bottom: 1px solid #fff;
-}
-.about-me__nav,.contact__nav{
-	border-bottom: 1px solid #bebebe;
 }
 
 /*=====  ABOUT ME =====*/
@@ -109,13 +163,19 @@ a{
 		flex-direction: column;
 		justify-content: space-around;
 		&--title{
+			font-size: 60px;
+			font-family: 'nexa_lightregular';
 			text-transform: uppercase;
 		}
 		&--text{
-
+			font-size: 1.5em;
+			line-height: 2;
+			letter-spacing: 0.025em;
+			font-family: 'open-sanslight';
 		}
 		&--signature{
-
+			font-family: 'felt_tip_womanregular';
+			font-size: 36px;
 		}
 	}
 	&__link-to-down{
@@ -126,11 +186,6 @@ a{
 	}
 }
 
-.link-to-down--wrapper{
-	text-align: center;
-	margin-top: 8vh;
-}
-
 
 /*===  PORTFOLIO  ===*/
 .portfolio{
@@ -138,7 +193,11 @@ a{
 	&__nav--link{
 		color: #fff;
 	}
+	&__nav--link:hover{
+		text-decoration: underline;
+	}
 	&__title{
+		font-family: 'nexa_lightregular';
 		padding: 8vh 0 8vh 0;
 		color: #fff;
 		font-size: 60px;
@@ -153,14 +212,16 @@ a{
 	}
 	&__item{
 		margin-bottom: 2vw;
-		
+	}
+	&__item:hover{
+		filter: brightness(70%);
 	}
 	&__link-to-down{
 		color: #fff;
 		padding-bottom: 20px;
 	}
 	&__link-to-down:hover{
-
+		color: #bebebe;
 	}
 }
 
@@ -181,6 +242,7 @@ a{
 		
 	}
 	&__title{
+		font-family: 'nexa_boldregular';
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 30px;
@@ -190,7 +252,7 @@ a{
 	&__link{
 		color: #000;
 		font-size: 60px;
-
+		font-family: 'nexa_lightregular';
 	}
 	&__social-media{
 
@@ -228,4 +290,5 @@ a{
 	text-transform: uppercase;
 	border-top: 1px solid #bebebe;
 	color: #bebebe;
+	font-family: 'nexa_lightregular';
 }

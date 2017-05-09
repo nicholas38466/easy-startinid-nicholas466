@@ -409,6 +409,34 @@ template {
 [hidden] {
   display: none; }
 
+/*======TYPOGRAPHY=====*/
+@font-face {
+  font-family: 'nexa_boldregular';
+  src: url("../fonts/nexa_bold-webfont.eot");
+  src: url("../fonts/nexa_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nexa_bold-webfont.woff2") format("woff2"), url("../fonts/nexa_bold-webfont.woff") format("woff"), url("../fonts/nexa_bold-webfont.svg#nexa_boldregular") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'nexa_lightregular';
+  src: url("../fonts/nexa_light-webfont.eot");
+  src: url("../fonts/nexa_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nexa_light-webfont.woff2") format("woff2"), url("../fonts/nexa_light-webfont.woff") format("woff"), url("../fonts/nexa_light-webfont.svg#nexa_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'felt_tip_womanregular';
+  src: url("../fonts/felt_tip_woman-webfont.eot");
+  src: url("../fonts/felt_tip_woman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/felt_tip_woman-webfont.woff2") format("woff2"), url("../fonts/felt_tip_woman-webfont.woff") format("woff"), url("../fonts/felt_tip_woman-webfont.svg#felt_tip_womanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open-sanslight';
+  src: url("../fonts/open-sans-light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
 
@@ -425,6 +453,39 @@ a {
   width: 100%;
   background-size: cover; }
 
+.nav {
+  height: 10vh;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  font-size: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .nav__link {
+    margin: 0 1.3% 0 1.3%;
+    font-family: 'nexa_lightregular'; }
+
+.link-to-down {
+  font-family: 'nexa_boldregular';
+  text-align: center;
+  font-size: 18px; }
+
+.icon {
+  font-size: 32px; }
+
+.home__nav, .porfolio__nav {
+  border-bottom: 1px solid #fff; }
+
+.about-me__nav, .contact__nav {
+  border-bottom: 1px solid #bebebe; }
+
+.link-to-down--wrapper {
+  text-align: center;
+  margin-top: 8vh; }
+
 /*=======  HOME  ========*/
 .home {
   background-image: url(../../images/Background-home.jpg); }
@@ -440,6 +501,8 @@ a {
         align-items: center; }
   .home__nav--link {
     color: #fff; }
+  .home__nav--link:hover {
+    text-decoration: underline; }
   .home__logo {
     margin-top: 80px;
     height: 44vh;
@@ -447,36 +510,12 @@ a {
   .home__title {
     font-size: 60px;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'nexa_lightregular'; }
   .home__link-to-down {
     color: #fff; }
-
-.nav {
-  height: 10vh;
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  font-size: 24px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .nav__link {
-    margin: 0 1.3% 0 1.3%; }
-
-.link-to-down {
-  text-align: center;
-  font-size: 18px; }
-
-.icon {
-  font-size: 32px; }
-
-.home__nav, .porfolio__nav {
-  border-bottom: 1px solid #fff; }
-
-.about-me__nav, .contact__nav {
-  border-bottom: 1px solid #bebebe; }
+  .home__link-to-down:hover {
+    color: #bebebe; }
 
 /*=====  ABOUT ME =====*/
 .about-me__nav--link {
@@ -507,7 +546,17 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .about-me__info--title {
+    font-size: 60px;
+    font-family: 'nexa_lightregular';
     text-transform: uppercase; }
+  .about-me__info--text {
+    font-size: 1.5em;
+    line-height: 2;
+    letter-spacing: 0.025em;
+    font-family: 'open-sanslight'; }
+  .about-me__info--signature {
+    font-family: 'felt_tip_womanregular';
+    font-size: 36px; }
 
 .about-me__link-to-down {
   color: #bebebe; }
@@ -515,16 +564,15 @@ a {
 .about-me__link-to-down:hover {
   color: #000; }
 
-.link-to-down--wrapper {
-  text-align: center;
-  margin-top: 8vh; }
-
 /*===  PORTFOLIO  ===*/
 .portfolio {
   background-image: url(../../images/Background-portfolio.jpg); }
   .portfolio__nav--link {
     color: #fff; }
+  .portfolio__nav--link:hover {
+    text-decoration: underline; }
   .portfolio__title {
+    font-family: 'nexa_lightregular';
     padding: 8vh 0 8vh 0;
     color: #fff;
     font-size: 60px;
@@ -540,9 +588,13 @@ a {
         justify-content: space-between; }
   .portfolio__item {
     margin-bottom: 2vw; }
+  .portfolio__item:hover {
+    filter: brightness(70%); }
   .portfolio__link-to-down {
     color: #fff;
     padding-bottom: 20px; }
+  .portfolio__link-to-down:hover {
+    color: #bebebe; }
 
 /*=====  CONTACT  =====*/
 .contact {
@@ -559,13 +611,15 @@ a {
     -ms-flex-direction: column;
         flex-direction: column; }
   .contact__title {
+    font-family: 'nexa_boldregular';
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
     padding: 50px 0 25px 0; }
   .contact__link {
     color: #000;
-    font-size: 60px; }
+    font-size: 60px;
+    font-family: 'nexa_lightregular'; }
 
 .social-links {
   display: -ms-flexbox;
@@ -598,6 +652,7 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   border-top: 1px solid #bebebe;
-  color: #bebebe; }
+  color: #bebebe;
+  font-family: 'nexa_lightregular'; }
 
 /*# sourceMappingURL=main.css.map */

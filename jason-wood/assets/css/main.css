@@ -488,7 +488,7 @@ a {
 
 /*=======  HOME  ========*/
 .home {
-  background-image: url(../../images/Background-home.jpg); }
+  background-image: url(../../images/background-home.jpg); }
   .home__content {
     height: 90vh;
     display: -ms-flexbox;
@@ -566,7 +566,7 @@ a {
 
 /*===  PORTFOLIO  ===*/
 .portfolio {
-  background-image: url(../../images/Background-portfolio.jpg); }
+  background-image: url(../../images/background-portfolio.jpg); }
   .portfolio__nav--link {
     color: #fff; }
   .portfolio__nav--link:hover {

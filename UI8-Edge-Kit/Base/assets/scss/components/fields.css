@@ -1,0 +1,246 @@
+.field {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin: 0 16px 20px 0;
+}
+  .field--normal {
+    height: 48px;
+    font-size: 16px; }
+    .field--normal__search-icon {
+      position: absolute;
+      left: 17px;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #c6ccd2;
+      transform: translateY(-60%); }
+      .field--normal__search-icon:after {
+        width: 3px;
+        height: 8px;
+        background-color: #c6ccd2;
+        content: '';
+        position: absolute;
+        top: 75%;
+        right: -40%;
+        transform: rotate(-45deg); }
+    .field--normal__search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 48px;
+      height: 100%;
+      border-radius: 0 6px 6px 0;
+      background-color: #c6ccd2;
+      color: #FFF;
+      cursor: pointer; }
+      .field--normal__search-btn:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        transform: translate(-60%, -60%); }
+      .field--normal__search-btn:before {
+        width: 3px;
+        height: 3px;
+        background-color: currentColor;
+        content: '';
+        position: absolute;
+        top: 57%;
+        left: 57%;
+        box-shadow: 
+        1px 1px 0 0 currentColor, 
+        2px 2px 0 0 currentColor, 
+        3px 3px 0 0 currentColor, 
+        4px 4px 0 0 currentColor, 
+        5px 5px 0 0 currentColor; }
+    .field--normal.is-combo .field__input {
+      width: calc(100% - 58px); }
+    .field--normal.is-combo .field--normal__search-btn {
+      background-color: #24aa98;
+      border-radius: 5px;
+       }
+  .field.is-active .field__input {
+    border-color: #65abd0; }
+  .field.is-active .field__search-icon {
+    border-color: #383737;
+    color: #383737; }
+    .field.is-active .field__search-icon:after {
+      background-color: #383737; }
+  .field.is-active .field__close-circle-icon {
+    display: block; }
+  .field__input {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0 18px;
+    border: 2px solid #c6ccd2;
+    font-weight: bold; }
+    .field__input.placeholder {
+      color: #c6ccd2; }
+    .field__input:-moz-placeholder {
+      color: #c6ccd2; }
+    .field__input::-moz-placeholder {
+      color: #c6ccd2; }
+    .field__input:-ms-input-placeholder {
+      color: #c6ccd2; }
+    .field__input::-webkit-input-placeholder {
+      color: #c6ccd2; }
+    .field__input--round {
+      padding: 0 45px;
+      border-radius: 24px; }
+    .field__input--split {
+      padding-right: 50px; }
+  .field__close-circle-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #c6ccd2;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .field__close-circle-icon:after, .field__close-circle-icon:before {
+      width: 2px;
+      height: 10px;
+      background-color: #fff;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%; }
+    .field__close-circle-icon:after {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .field__close-circle-icon:before {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+  .field.is-filled .field__input {
+    border-color: #24aa98; }
+  .field.is-error .field__input {
+    border-color: #db7560; }
+  .field__check-icon {
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 14px;
+    height: 10px;
+    color: #24aa98;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .field__check-icon:after {
+      width: 2px;
+      height: 3px;
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      box-shadow: -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor, -7px 7px 0 0 currentColor, -8px 6px 0 0 currentColor, -9px 5px 0 0 currentColor, -10px 4px 0 0 currentColor, -11px 3px 0 0 currentColor; }
+  .field__close-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 10px;
+    height: 10px;
+    color: #db7560;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .field__close-icon:after {
+      width: 2px;
+      height: 2px;
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor; }
+  .field--small {
+    height: 36px;
+    font-size: 14px; }
+    .field--small .field__input {
+      padding: 0 15px; }
+      .field--small .field__input--round {
+        border-radius: 18px;
+        padding: 0 35px; }
+      .field--small .field__input--split {
+        padding-right: 40px; }
+    .field--small .field__close-circle-icon {
+      right: 9px; }
+    .field--small__search-icon {
+      position: absolute;
+      top: 50%;
+      left: 13px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #c6ccd2;
+      border-radius: 50%;
+      color: #c6ccd2;
+      transform: translateY(-60%); }
+      .field--small__search-icon:after {
+        width: 2px;
+        height: 2px;
+        background-color: currentColor;
+        content: '';
+        position: absolute;
+        top: 80%;
+        left: 85%;
+        box-shadow: 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor; }
+    .field--small__search-btn {
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 36px;
+      height: 100%;
+      background-color: #c6ccd2;
+      color: #FFF;
+      cursor: pointer; }
+      .field--small__search-btn:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 11px;
+        height: 11px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        transform: translate(-60%, -60%); }
+      .field--small__search-btn:before {
+        width: 2px;
+        height: 2px;
+        background-color: currentColor;
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        box-shadow: 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, 5px 5px 0 0 currentColor; }
+    .field--small.is-combo .field__input {
+      width: calc(100% - 46px); }
+    .field--small.is-combo .field--small__search-btn {
+      background-color: #24aa98; }
+
+.fields__small {
+  margin: 30px 0; }
+
+.fields__area {
+  margin-bottom: 50px; }
+
+.field-area {
+  border-radius: 5px;
+  width: 48%;
+  height: 140px;
+  padding: 10px 18px;
+  border: 2px solid #c6ccd2;
+  font-weight: bold; }
+  .field-area:focus {
+    outline: none; }
+  .field-area:first-child {
+    margin-right: 2%; }
+  .field-area.is-active {
+    border-color: #65abd0; }

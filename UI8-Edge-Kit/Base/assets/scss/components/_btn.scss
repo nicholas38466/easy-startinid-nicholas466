@@ -1,0 +1,474 @@
+button{
+  border: none;
+  outline: none;
+}
+
+.btn{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 20px 0;
+  background-color: $blue-btn-col;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &--rounded{
+    border-radius: 5px;
+  }
+
+  &--round{
+    border-radius: 999rem;
+  }
+  &--ghost{
+    border: 2px solid #65abd0;
+    background-color: transparent;
+    color: #65abd0;    
+    &:hover{
+      border-color: $blue-btn-hov-col;
+      color: $blue-btn-hov-col;}
+    }
+
+  &--circle{
+    position: relative;
+    border-radius: 999rem;
+    &:hover{
+        background-color: $blue-btn-hov-col;}
+    &:after{
+      width: 2px;
+      height: 2px;
+      background-color: #fff;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+  }
+
+/*====  btn--lg  ====*/
+
+&--lg{
+  min-width: 190px;
+  padding: 18px;
+  font-size: 18px;
+  &:not(.btn--ghost):hover{
+    background-color: $blue-btn-hov-col;
+  }
+  &--circle{
+    width: 60px;
+    height: 60px;
+    &:after{
+      transform: translate(150%, -50%);
+      box-shadow: 
+      -1px 1px 0 0 currentColor, 
+      -2px 2px 0 0 currentColor, 
+      -3px 3px 0 0 currentColor, 
+      -4px 4px 0 0 currentColor, 
+      -5px 5px 0 0 currentColor, 
+      -6px 6px 0 0 currentColor, 
+      -1px -1px 0 0 currentColor, 
+      -2px -2px 0 0 currentColor, 
+      -3px -3px 0 0 currentColor, 
+      -4px -4px 0 0 currentColor, 
+      -5px -5px 0 0 currentColor, 
+      -6px -6px 0 0 currentColor; 
+    }
+  }
+}/*== /btn--lg ==*/
+  
+
+/*====   BTN--MD  ====*/
+
+&--md{
+  min-width: 140px;
+  padding: 12px;
+  font-size: 16px;
+  &:not(.btn--ghost):hover{
+    background-color: $blue-btn-hov-col;
+  }
+  &--square{
+    width: 48px;
+    height: 48px;
+  }
+  
+  &--circle{
+    width: 48px;
+    height: 48px;
+    &:after{
+      transform: translate(-300%, -50%);
+      box-shadow: 
+      1px -1px 0 0 currentColor, 
+      2px -2px 0 0 currentColor, 
+      3px -3px 0 0 currentColor, 
+      4px -4px 0 0 currentColor, 
+      5px -5px 0 0 currentColor, 
+      6px -6px 0 0 currentColor, 
+      1px 1px 0 0 currentColor, 
+      2px 2px 0 0 currentColor, 
+      3px 3px 0 0 currentColor, 
+      4px 4px 0 0 currentColor, 
+      5px 5px 0 0 currentColor, 
+      6px 6px 0 0 currentColor;
+    }
+  }
+  &--arrow{
+    border-radius: 5px;
+    position: relative;
+    min-width: 100px;
+    padding-left: 27px;
+    padding-right: 16px;
+    &:after{
+      border-radius: 5px;
+      width: 37px;
+      height: 37px;
+      background-color: inherit;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(42%, -50%) rotate(45deg);
+    }
+  }    
+}/*== /btn--md ==*/
+&--square{
+  border-radius: 5px;
+  position: relative;
+  padding: 0; 
+  &:hover{
+    background-color: $blue-btn-hov-col;
+  }
+  
+  &:after{
+    width: 18px;
+    height: 2px;
+    background-color: currentColor;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 
+    0 6px 0 0 currentColor, 
+    0 -6px 0 0 currentColor;
+  }
+}
+&--arrow__text{
+  position: relative;
+  z-index: 1;
+}
+
+/*====  BTN--CM  ====*/
+
+&--sm{
+  min-width: 120px;
+  padding: 6px 30px;
+  font-size: 14px;
+  &:not(.btn--ghost):hover{
+      background-color: $blue-btn-hov-col;
+  }    
+  &--square{
+    width: 36px;
+    height: 36px;
+    &:hover{
+      background-color: $blue-btn-hov-col;
+    }
+  }
+  &--circle{
+    width: 36px;
+    height: 36px;
+    &:after{
+      transform: translate(100%, -50%);
+      box-shadow: 
+      -1px -1px 0 0 currentColor, 
+      -2px -2px 0 0 currentColor, 
+      -3px -3px 0 0 currentColor, 
+      -4px -4px 0 0 currentColor, 
+      -1px 1px 0 0 currentColor, 
+      -2px 2px 0 0 currentColor, 
+      -3px 3px 0 0 currentColor, 
+      -4px 4px 0 0 currentColor;
+    }
+    &--circle:hover{
+      background-color: $blue-btn-hov-col;
+    } 
+  }
+    
+
+    &--arrow{
+      border-radius: 5px;
+      position: relative;
+      min-width: 90px;
+      padding-left: 25px;
+      padding-right: 18px;
+      &:after{
+        border-radius: 5px;
+        width: 29px;
+        height: 29px;
+        background-color: inherit;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(40%, -50%) rotate(45deg);
+      }
+    }
+  }/*== /btn--sm ==*/
+}/*== /btn ==*/
+
+
+
+.buttons--split{
+  margin: 40px 0;
+}
+
+.split--align{
+  width: 48px;
+  height: 48px;
+  background-color: $btn-split-col;
+  position: relative;
+  float: left;
+  border-right: 1px solid #269e8e;
+  border-left: 1px solid #269e8e;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+  &:last-child{
+    border-right: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &:first-child{
+    border-left: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+.split--align__line{
+  width: 18px;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.split--align:after{
+  width: 8px;
+  height: 2px;
+  background-color: currentColor;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.split--align:before{
+  width: 14px;
+  height: 2px;
+  background-color: currentColor;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.split--align:hover{
+  background-color: $btn-split-hov-col;
+}
+.btn--split{
+  overflow: hidden; 
+  &--part{
+    width: 38px;
+    height: 36px;
+    background-color: transparent;
+    position: relative;
+    float: left;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    &:after{
+      width: 2px;
+      height: 2px;
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    &:hover{
+      background-color: $blue-btn-hov-col;
+    }
+  }
+  &__left{
+    border-right: 1px solid #609fc0;
+    &:after{
+      transform: translate(-100%, -50%);
+      box-shadow: 
+      1px -1px 0 0 currentColor, 
+      2px -2px 0 0 currentColor, 
+      3px -3px 0 0 currentColor, 
+      4px -4px 0 0 currentColor, 
+      1px 1px 0 0 currentColor, 
+      2px 2px 0 0 currentColor, 
+      3px 3px 0 0 currentColor, 
+      4px 4px 0 0 currentColor;
+    }
+  }
+  &__right{
+    border-left: 1px solid #609fc0;
+    &:after{
+      transform: translate(50%, -50%);
+      box-shadow: 
+      -1px -1px 0 0 currentColor, 
+      -2px -2px 0 0 currentColor, 
+      -3px -3px 0 0 currentColor, 
+      -4px -4px 0 0 currentColor, 
+      -1px 1px 0 0 currentColor, 
+      -2px 2px 0 0 currentColor, 
+      -3px 3px 0 0 currentColor, 
+      -4px 4px 0 0 currentColor;
+    }
+  }
+}
+
+
+
+
+
+.split-btn{
+  display: inline-block;
+  vertical-align: middle;
+  height: 48px;
+  margin: 0 16px 20px 0;
+  color: #FFF;
+}
+.split-btn--align{
+  width: 144px;
+  overflow: hidden;
+  &__left:before{
+    transform: translate(-9px, -7px);
+  }
+  &__left:after{
+    transform: translate(-9px, 5px);
+  }
+  &__center:before{
+    transform: translate(-50%, -7px);
+  }
+  &__center:after{
+    transform: translate(-50%, 5px);
+  }
+  &__right:before{
+    transform: translate(-5px, -7px);
+  }
+  &__right:after{
+    transform: translate(1px, 5px);
+  }
+}
+.split-btn--input{
+  position: relative;
+  width: 296px;
+}
+.split-btn--input__field{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 80px;
+  border: 2px solid #c6ccd2;
+}
+.split-btn__simple-btn{
+  width: 76px;
+  height: 100%;
+  background-color: $btn-split-col;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 6px 6px 0;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  .split-btn__simple-btn:hover{
+      background-color: $btn-split-hov-col;
+    }
+.split-btn--dropdown--input{
+  position: relative;
+  width: 380px;
+}
+.split-btn--dropdown--input__field{
+  height: 100%;
+  width: 100%;
+  padding-left: 125px;
+  padding-right: 80px;
+  border: 2px solid #c6ccd2;
+}
+.split-btn__open-btn{
+  width: 112px;
+  height: 100%;
+  background-color: $btn-split-col;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-right: 20px;
+  border-radius: 6px 0 0 6px;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.split-btn__open-btn:hover{
+  background-color: $btn-split-hov-col;
+}
+.split-btn__open-btn:after{
+  width: 2px;
+  height: 2px;
+  background-color: currentColor;
+  content: '';
+  position: absolute;
+  top: 55%;
+  right: 20px;
+  box-shadow: 1px -1px 0 0 currentColor, 
+  2px -2px 0 0 currentColor, 
+  3px -3px 0 0 currentColor, 
+  4px -4px 0 0 currentColor, 
+  -1px -1px 0 0 currentColor, 
+  -2px -2px 0 0 currentColor, 
+  -3px -3px 0 0 currentColor, 
+  -4px -4px 0 0 currentColor;
+}
+.split-btn--dropdown{
+  width: 60px;
+  &__simple{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: $btn-split-col;
+    position: relative;
+    padding-right: 20px;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+     &:hover{
+      background-color: $btn-split-hov-col;
+    }
+    &:after{
+      width: 2px;
+      height: 2px;
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 55%;
+      right: 15px;
+      box-shadow: 
+      1px -1px 0 0 currentColor, 
+      2px -2px 0 0 currentColor, 
+      3px -3px 0 0 currentColor, 
+      4px -4px 0 0 currentColor, 
+      -1px -1px 0 0 currentColor, 
+      -2px -2px 0 0 currentColor, 
+      -3px -3px 0 0 currentColor, 
+      -4px -4px 0 0 currentColor;
+    }
+  }
+}

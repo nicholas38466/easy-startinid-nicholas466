@@ -1,0 +1,257 @@
+@media (max-width: 1340px ) {
+	.home-top--bunner,.header__top,.header--bottom{
+		padding: 0 100px 0 100px;
+	}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1180px ) {
+	.home-top--bunner,.header__top,.header--bottom{
+		padding: 0 10px 0 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px ) {
+	
+	.contact--info{
+		display: none;
+	}
+	.header__top{
+		padding-left: 6%;
+		padding-right: 6%;
+		padding-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.nav-bar{
+		order: 4;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hav-link{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.header--bottom{
+		padding-left: 6%;
+		padding-right: 6%;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		justify-content: space-between;
+	}
+	.home-top--bunner{
+		display: flex;
+		justify-content: center;
+	}
+	.exchange-form{
+		
+	}
+	.home-top--bunner--tablet-title{
+		display: block;
+		text-align: center;
+		font-size: 36px;
+		padding-bottom: 25px;
+	}
+	.work-time--tablet{
+		display: block;
+	}
+	.bunner--left-side--info{
+		padding-left: 6%;
+		padding-right: 6%;
+		&>h1,&>ol{
+			display: none;
+		}
+	}
+	.bunner--right-side--info{
+		display: none;
+	}
+
+	.partners-info{
+	height: 100px;
+	width: 240px;
+	background-color: #fff5c8;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.payments{
+	display: flex;
+	align-items: center;
+
+	&__logo{
+		height: 38px;
+		width: 35px;
+		background-image: url(./../../images/bag-icon.png);
+		background-size: cover;
+		margin-right: 5px;
+	}
+	&__info{
+		&--title{
+		color: #348b19;
+		font-weight: 900;
+		}
+		&>span{
+			font-size: 12px;
+		}
+		&--link{
+			float: right;
+			font-size: 14px;
+			text-decoration: underline;
+			color: #268fbd;
+		}
+	}
+	
+}
+
+.discounts{
+	display: flex;
+	align-items: center;
+	&__logo{
+		height: 38px;
+		width: 50px;
+		background-image: url(./../../images/discont-icon.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-right: 5px;
+		margin-left: 10px;
+	}
+	&__info{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__title{
+		font-weight: 700;
+	}
+	&__link{
+		color: #268fbd;
+		font-size: 14px;
+	}
+}
+}
+
+@media (max-width: 767px ){
+//header-bottom
+	.header--bottom{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	.users-links,.work-time,.contact--mail{
+		display: none;
+	}
+	.header__top{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.header--bottom{
+		width: 100%;
+		padding: 0;
+	}
+	.contact--info{
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		padding-top: 20px;
+	}
+	.contact-tel{
+		
+	}
+	.social-tel--links{
+		display: none;
+	}
+	.social-tel--links--tel{
+		display: flex;
+		justify-content: center;
+	}
+	.social-tel--link{
+		margin: 0;
+		&:hover{
+			background: none;
+			margin-top: -5px;
+		}
+	}
+	.bunner--right-side--info{
+		display: none;
+	}
+	
+	.bunner--left-side--info{
+		float: none;
+		margin-top: 10px;
+		&>ol{
+			display: none;
+		}
+		&>h1{
+			display: none;
+		}
+	}
+
+	.home-top--bunner{
+		background: none;
+		padding: 0;
+		width: 100%;
+		height: 380px;
+	}
+
+	.exchange-form{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+		&>label{
+			font-weight: 700;
+		}
+		&__msg{
+			width: 100%;
+			text-align: center;
+			top: 200px;
+		}
+		&__link{
+			display: none;
+		}
+
+	}
+	.split--input-dropdown{
+		width: 100%;
+	}
+
+	.social-links{
+		display: none;
+	}
+	.nav-bar{
+		display: none;
+	}
+	.exchange--link{
+		display: block;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 28px;
+	}
+	.nav-toggle{
+		display: block;
+		width: 30px;
+    	height: 20px;
+    	cursor: pointer;
+    	&__line {
+    		margin-bottom: 7px;
+    		display: block;
+    		width: 100%;
+    		height: 3px;
+    		background-color: #979797;
+			}
+		}
+
+		.personal-area{
+			display: block;
+			cursor: pointer;
+			&>.icon{
+				font-size: 10px;
+				vertical-align: baseline;
+				margin-left: 5px;
+
+			}
+		}
+}

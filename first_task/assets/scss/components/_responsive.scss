@@ -7,7 +7,11 @@
 
 @media (min-width: 1024px) and (max-width: 1180px ) {
 	.home-top--bunner,.header__top,.header--bottom{
-		padding: 0 10px 0 10px;
+		padding: 0 30px 0 30px;
+	}
+	.hav-link{
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -45,9 +49,7 @@
 		display: flex;
 		justify-content: center;
 	}
-	.exchange-form{
-		
-	}
+	
 	.home-top--bunner--tablet-title{
 		display: block;
 		text-align: center;
@@ -131,6 +133,7 @@
 	}
 }
 }
+
 
 @media (max-width: 767px ){
 //header-bottom
@@ -241,17 +244,94 @@
     		width: 100%;
     		height: 3px;
     		background-color: #979797;
-			}
 		}
+	}
 
-		.personal-area{
+	.personal-area{
+		display: block;
+		cursor: pointer;
+		&>.icon{
+			font-size: 10px;
+			vertical-align: baseline;
+			margin-left: 5px;
+		}
+	}
+
+	.navbar__content.container{
+		display: block;
+	}
+	.nav-main {
+		display: block;
+		text-transform: uppercase;
+		font-size: 1.125rem;
+		letter-spacing: 0.05em;
+		vertical-align: middle;
+		text-align: center;
+		z-index: 1;
+		width: 100%;
+		
+		background-color: #909598;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		transition: left .3s;
+		&.visible {
+			left: 0;
+		}
+		
+		li, ul {
+			margin: 0;
+			padding: 0;
+		}
+		
+		&__item {
 			display: block;
-			cursor: pointer;
-			&>.icon{
-				font-size: 10px;
-				vertical-align: baseline;
-				margin-left: 5px;
-
+			margin-right: -4px;
+			transition: background-color .2s;
+			&:first-child {
+				padding-top: 10px;
 			}
 		}
+
+		&__link {
+			margin-right: -4px;
+			display: inline-block;
+			color: #fff;
+			
+			width: 100%;
+			padding: 15px 0;
+			&:hover {
+				background-color: #3f9923;
+				transition: background-color .2s;
+			}
+
+			.active {
+				background-color: #3f9923;
+			}
+		}
+	}
+	.nav-toggle {
+		display: block;
+		position: absolute;
+		right: -50px;
+		top: 10px;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+		transition: transform .5s;
+	
+		&.visible {
+			right: 10px;
+			transform: rotate(-180deg);
+			transition: transform .5s;
+		}
+		
+		&__line {
+			margin-bottom: 7px;
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: #000;
+		}
+	}
 }

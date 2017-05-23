@@ -110,7 +110,7 @@ body{
 	display: none;
 }
 .contact--info{
-	width: 550px;
+	width: 530px;
 	height: 85px;
 	display: flex;
 	flex-wrap: wrap;
@@ -453,5 +453,8 @@ h1{
 	}
 }
 
+.navbar__content.container{
+	display: none;
+}
 
 @import 'components/responsive';

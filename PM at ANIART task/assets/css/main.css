@@ -10,16 +10,28 @@
   font-family: "icon-font"; }
   .icon:before {
     /* Some common icon stuff */ }
-  .icon.icon--dribbble-logo:before {
+  .icon.icon--001-youtube:before {
     content: ""; }
-  .icon.icon--facebook-logo:before {
+  .icon.icon--002-lightning-bolt-shadow:before {
     content: ""; }
-  .icon.icon--google-plus-symbol:before {
+  .icon.icon--003-exclamation-button:before {
     content: ""; }
-  .icon.icon--twitter-logo-silhouette:before {
+  .icon.icon--004-graphic:before {
     content: ""; }
-  .icon.icon--vimeo-logo:before {
+  .icon.icon--005-facebook-app-logo:before {
     content: ""; }
+  .icon.icon--006-technology:before {
+    content: ""; }
+  .icon.icon--007-vk:before {
+    content: ""; }
+  .icon.icon--008-eye:before {
+    content: ""; }
+  .icon.icon--009-twitter-logo-silhouette:before {
+    content: ""; }
+  .icon.icon--010-facebook-logo:before {
+    content: ""; }
+  .icon.icon--search:before {
+    content: ""; }
 
 /* Document
    ========================================================================== */
@@ -450,14 +462,20 @@ a {
   border-bottom: 1px solid #cbcbcb;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   position: relative;
   z-index: 5;
   background-color: #fff; }
 
 .nav {
-  margin-left: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: -65px;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +485,8 @@ a {
     color: #686868;
     border-radius: 5px;
     margin-left: 7px;
-    padding: 7px 16px 7px 16px; }
+    padding: 7px 16px 7px 16px;
+    cursor: pointer; }
     .nav__link:first-child {
       margin-left: 0; }
     .nav__link:hover {
@@ -480,6 +499,10 @@ a {
   border: 1px solid red; }
   .link--to-blog:hover {
     background-color: red; }
+
+.sign-in-search {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .money-photo {
   z-index: 1;
@@ -520,6 +543,36 @@ a {
     margin-top: 40px;
     margin-left: -5px; }
 
+.users-links {
+  width: 180px;
+  height: 100px;
+  background-color: #000;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .users-links__link {
+    color: #fff;
+    padding: 5px;
+    margin-left: 35px;
+    margin-right: 15px;
+    font-size: 14px;
+    border-radius: 5px; }
+    .users-links__link:hover {
+      text-decoration: underline;
+      background-color: red; }
+  .users-links__logo {
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    left: 15px; }
+  .users-links-wrap {
+    position: absolute;
+    right: 3.3%; }
+
 .second-screen {
   min-height: 100vh;
   position: relative;
@@ -551,5 +604,115 @@ a {
     word-spacing: 1px;
     line-height: 125%;
     color: #b3b3b3; }
+
+.to-more-info {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 110px 30px 75px 30px;
+  background: url(./../../images/business-bg.jpg); }
+  .to-more-info__link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 45%;
+    height: 32.5vh;
+    border: 2px solid #fff;
+    font-size: 12px;
+    color: #fff; }
+    .to-more-info__link--title {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .to-more-info__link > .sicoal-views > .icon {
+      margin-left: 10px; }
+    .to-more-info__link:hover {
+      background-color: #000;
+      opacity: .7;
+      border-radius: 5px; }
+
+.get-consultation {
+  height: 130px;
+  background-color: #c82425;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-right: 15px; }
+  .get-consultation__input {
+    height: 45px;
+    width: 230px;
+    padding-left: 15px;
+    margin-right: 15px;
+    border: none; }
+  .get-consultation__btn {
+    width: 270px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #ea2d2e;
+    border: none;
+    box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.75);
+    outline: none;
+    cursor: pointer;
+    color: #fff; }
+    .get-consultation__btn:active {
+      margin-bottom: -5px; }
+
+.footer__main {
+  height: 240px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 55px; }
+
+.footer-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .footer-links__title {
+    color: #999999; }
+  .footer-links > .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    padding-top: 10px;
+    border-radius: 999rem;
+    color: #fff;
+    text-align: center; }
+    .footer-links > .icon--010-facebook-logo {
+      background: linear-gradient(to right, #131313 0%, #1c1c1c 9%, #2b2b2b 24%, #111111 40%, black 49%, #2c2c2c 50%, #474747 61%, #666666 75%, #595959 88%, #4c4c4c 100%);
+      margin-bottom: 30px; }
+    .footer-links > .icon--001-youtube {
+      background: linear-gradient(to right, #e73827 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%); }
+
+.footer-link {
+  color: #4f4f4f;
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 125%; }
+
+.link--tel {
+  font-size: 18px; }
+
+.link--adress {
+  width: 180px; }
 
 /*# sourceMappingURL=main.css.map */

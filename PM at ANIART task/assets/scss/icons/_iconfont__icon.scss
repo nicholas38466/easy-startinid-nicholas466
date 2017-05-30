@@ -19,29 +19,59 @@ $global-font-icon: 'icon-font';
    /* Some common icon stuff */
  }
 
- &.icon--dribbble-logo {
+ &.icon--001-youtube {
    &:before {
-     content: $icon-dribbble-logo;
+     content: $icon-001-youtube;
    }
  }
- &.icon--facebook-logo {
+ &.icon--002-lightning-bolt-shadow {
    &:before {
-     content: $icon-facebook-logo;
+     content: $icon-002-lightning-bolt-shadow;
    }
  }
- &.icon--google-plus-symbol {
+ &.icon--003-exclamation-button {
    &:before {
-     content: $icon-google-plus-symbol;
+     content: $icon-003-exclamation-button;
    }
  }
- &.icon--twitter-logo-silhouette {
+ &.icon--004-graphic {
    &:before {
-     content: $icon-twitter-logo-silhouette;
+     content: $icon-004-graphic;
    }
  }
- &.icon--vimeo-logo {
+ &.icon--005-facebook-app-logo {
    &:before {
-     content: $icon-vimeo-logo;
+     content: $icon-005-facebook-app-logo;
+   }
+ }
+ &.icon--006-technology {
+   &:before {
+     content: $icon-006-technology;
+   }
+ }
+ &.icon--007-vk {
+   &:before {
+     content: $icon-007-vk;
+   }
+ }
+ &.icon--008-eye {
+   &:before {
+     content: $icon-008-eye;
+   }
+ }
+ &.icon--009-twitter-logo-silhouette {
+   &:before {
+     content: $icon-009-twitter-logo-silhouette;
+   }
+ }
+ &.icon--010-facebook-logo {
+   &:before {
+     content: $icon-010-facebook-logo;
+   }
+ }
+ &.icon--search {
+   &:before {
+     content: $icon-search;
    }
  }
 

@@ -8,7 +8,10 @@
 </head>
 <body>
 	<header class="header">
-		<div class="main-logo"><img src="./images/logo.png" alt=""></div>
+		<div class="main-logo">
+			<img class="main-logo__icon" src="./images/logo-icon.png">
+			<img class="main-logo__text" src="./images/logo-text.png""">
+		</div>
 		<nav class="nav">
 			<a href="#" class="nav__link">Преимущества</a>
 			<a href="#" class="nav__link">Стоимость</a>
@@ -20,14 +23,7 @@
 			<a href="#" class="nav__link link--sign-in">Вход</a>
 			<a href="#" class="nav__link icon icon--search"></a>
 		</div>
-	</header>
-
-	<article class="main-content">
-		<img class="money-photo money-photo--uah" src="./images/money-photo1.png">
-		<img class="money-photo money-photo--usd" src="./images/money-photo2.png" alt="">
-		
-		<div class="first-screen">
-			<div class="users-links-wrap">
+		<div class="users-links-wrap">
 				<div class="users-links">
 					<img class="users-links__logo" src="./images/broker.png">
 				
@@ -40,19 +36,30 @@
 					</a>
 				</div>
 			</div>
+	</header>
 
-			<h1 class="first-screen__title">Пожалуй лучший онлайн доступ в США</h1>
-
-			<div class="first-screen__text">
-				<p class="main-text">Более чем 7 000 акций и фондов от маленьких и динамично развивающихся до больших и стабильных</p>
-				<p class="main-text">Получайте доход на росте цены и дивидентах, а для трейдеров с опытом даем доступ к фьючерсам, опционам, CFD контрактам</p>
-				<p class="main-text">Доступ к рынку США с именного счета, открытого на ваше имя <br> в американском брокере</p>
-				<p class="main-text">Специальные лицензии не нужны - получите легальной доступ на фондовый рынок США</p>
+	<article class="main-content">
+		<img class="money-photo money-photo--uah" src="./images/money-photo1.png">
+		<img class="money-photo money-photo--usd" src="./images/money-photo2.png" alt="">
+		
+		<div class="first-screen">
+			
+			<div class="first-screen__content">
+				<h1 class="first-screen__title">Пожалуй лучший онлайн доступ в США</h1>
+				
+				<div class="first-screen__text">
+					<p class="main-text">Более чем 7 000 акций и фондов от маленьких и динамично развивающихся до больших и стабильных</p>
+					<p class="main-text">Получайте доход на росте цены и дивидентах, а для трейдеров с опытом даем доступ к фьючерсам, опционам, CFD контрактам</p>
+					<p class="main-text">Доступ к рынку США с именного счета, открытого на ваше имя <br> в американском брокере</p>
+					<p class="main-text">Специальные лицензии не нужны - получите легальной доступ на фондовый рынок США</p>
+				</div>
+				<a class="main-btn first-screen__btn" href="#">Зарегестрируйся безплатно</a>
 			</div>
-			<a class="main-btn first-screen__btn" href="#">Зарегестрируйся безплатно</a>
-		</div>
 
-		<div class="second-screen">
+		</div><!-- /first-screen -->
+
+<!-- SECOND SCREEN -->
+		<div class="second-screen container">
 			<div class="second-screen__content">
 				<h2 class="second-screen__title">Удобное приложение, где бы вы не находились</h1>
 				<div class="second-screen__text">
@@ -72,8 +79,11 @@
 					<p>Победитель в номинации "Лучшая платформа для торговли опционами" 2016 года</p>
 				</div>
 			</div>
-		</div>
-		<div class="to-more-info">
+		</div><!-- /second-screen -->
+
+<!--===LINKS TO MORE===-->
+		<div class="to-more-info container">
+
 			<a href="#" class="to-more-info__link">
 				<span class="to-more-info__link--title">Где смотреть информацию о компаниях США и ее финансовых отчетах</span>
 				<div class="sicoal-views">
@@ -105,17 +115,58 @@
 					<span class="icon icon--005-facebook-app-logo"> 41</span>
 				</div>
 			</a>
-		</div>
 
-		<div>
-			<span ></span>
-			<div class="message"></div>
-			<div class="message"></div>
-			<div class="message"></div>
-		</div>
+		</div><!--===/LINKS TO MORE===-->
 
+<!--===EXAMPLE MASSAGE===-->
+		<div class="example-message container">
+
+			<h2 class="example-message__main-title">Инвестиционные идеи уже включены в сервис</h2>
+
+			<div class="example-message__popoup example-message--warning">
+				<span class="example-message__title">Богдан Моторс недовыполнил план по выручке; рентабильность соответствует прогнозу</span>
+				<span class="icon icon--002-lightning-bolt-shadow"></span>
+				<p class="example-message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus minus ipsam suscipit nostrum, aut hic itaque harum consequuntur dicta amet, neque nesciunt. Magni et sim </p>
+				<button class="example-message__btn">Детальнее</button>
+			</div>
+
+			<div class="example-message__popoup example-message--info">
+				<span class="example-message__title">Индекс UX (-11,73%) показал максимальное снижение с 2008г</span>
+				<span class="icon icon--003-exclamation-button"></span>
+				<p class="example-message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor vero eveniet dolorem. Possimus itaque debitis sapiente eligendi nemo doloribus excepturi, veritatis pariatur incidunt at aliquam minima, voluptatem, officia commodi ar</p>
+				<button class="example-message__btn">Детальнее</button>
+			</div>
+
+			<div class="example-message__popoup example-message--statistic">
+				<span class="example-message__title">Средняя динамика индекса S&P 500 в годы выборов, % в пересчете на годовой рост</span>
+				<span class="icon icon--004-graphic"></span>
+				<img class="example-message__graphic" src="./images/graphic.png"></img>
+				<ul class="example-message__items-graph">
+
+					<li class="example-message__item">
+						<span class="color-for-graph color-for-graph--red"></span>Все годы выборов
+					</li>
+
+					<li class="example-message__item">
+						<span class="color-for-graph color-for-graph--green"></span>Легко предсказуемые
+					</li>
+
+					<li class="example-message__item">
+						<span class="color-for-graph color-for-graph--blue"></span>Сложно предсказуемые
+					</li>
+
+					<li class="example-message__item">
+						<span class="color-for-graph color-for-graph--pink"></span>2016
+					</li>
+
+				</ul>
+				<button class="example-message__btn">Детальнее</button>
+			</div><!-- /example-message--statistic -->
+
+		</div>
 	</article>
 
+<!--===FOOTER===-->
 	<footer class="footer">
 
 		<form class="get-consultation">
@@ -153,6 +204,16 @@
 				<span class="footer-link link--adress">Украина, 03151, г. Киев, ул. Народного Ополчения 1, 6-й этаж</span>
 				<a href="#" class="footer-link">Показать на карте</a>
 			</div>
+
+			<div class="main-logo--column-type">
+				<img class="main-logo__icon" src="./images/logo-icon.png">
+				<img class="main-logo__text" src="./images/logo-text.png">
+			</div>
+		</div>
+
+		<div class="copyright">
+			<span>© 2007 - 2017 Арткапитал</span>
+			<a href="#" class="link--law-info">Правовая информация</a>
 		</div>
 	</footer>
 </body>

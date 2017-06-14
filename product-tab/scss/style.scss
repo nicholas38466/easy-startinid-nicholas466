@@ -1,0 +1,56 @@
+.tab {
+    width: 300px;
+    height: 250px;
+    margin: 50px auto;
+    background-color: #ccc;
+    box-shadow: 0 0 10px 2px #555;
+    &__picture {
+        position: relative;
+        height: 200px;
+        &-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition-duration: 1s;
+            &.is-current {
+                opacity: 1;
+            }
+            & > img {
+                max-width: 100%;
+            }   
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        &-item {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            cursor: pointer;
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+            &.is-active {
+                box-shadow: 0 0 5px 2px #555;
+            }
+            &--blue {
+                background-color: blue;
+            }
+            &--green {
+                background-color: green;
+            }
+            &--grey {
+                background-color: grey;
+            }
+            &--orange {
+                background-color: orange;
+            }
+            &--white {
+                background-color: white;
+            }
+        }
+    }
+}

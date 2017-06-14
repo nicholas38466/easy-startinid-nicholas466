@@ -1,0 +1,77 @@
+.tab {
+  width: 300px;
+  height: 250px;
+  margin: 50px auto;
+  background-color: #ccc;
+  -webkit-box-shadow: 0 0 10px 2px #555;
+  box-shadow: 0 0 10px 2px #555;
+}
+
+.tab__picture {
+  position: relative;
+  height: 200px;
+}
+
+.tab__picture-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.tab__picture-item.is-current {
+  opacity: 1;
+}
+
+.tab__picture-item > img {
+  max-width: 100%;
+}
+
+.tab__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tab__nav-item {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tab__nav-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.tab__nav-item.is-active {
+  -webkit-box-shadow: 0 0 5px 2px #555;
+  box-shadow: 0 0 5px 2px #555;
+}
+
+.tab__nav-item--blue {
+  background-color: blue;
+}
+
+.tab__nav-item--green {
+  background-color: green;
+}
+
+.tab__nav-item--grey {
+  background-color: grey;
+}
+
+.tab__nav-item--orange {
+  background-color: orange;
+}
+
+.tab__nav-item--white {
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */

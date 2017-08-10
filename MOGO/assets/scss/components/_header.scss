@@ -1,0 +1,31 @@
+.header{
+	color: $white-color;
+	top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.btn.btn-close-menu{
+	display: none;
+}
+.nav{
+	&-list{
+		display: flex;
+	}
+	&-link{
+		display: inline-block;
+		text-transform: uppercase;
+		margin-left: 50px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid transparent;
+		transition: .3s;
+		&:hover{
+			color: $links-color;
+			border-bottom: 3px solid $links-color;
+		}
+	}
+}

@@ -1,0 +1,177 @@
+.slider.home-banner.slick-initialized.slick-slider.slick-dotted{
+	z-index: 1;
+}
+.slick-list.draggable{
+	height: 100vh;
+	min-height: 800px;
+}
+.slick-track{
+	height: 100%;
+	width: 100%;
+}
+.home-banner{
+	height: 100%;
+	width: 100%;
+	&-item{
+		width: 100%;
+		height: 100%;
+	}
+	& .item-1{
+		background-image: url(../img/bunner-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		& .content{
+			position: absolute;
+			opacity: 1;
+			z-index: 10;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: $white-color;
+		}
+		& .section-title-secondary{
+			font-size: 72px;
+		}
+		& .section-title-main{
+			font-size: 150px;
+			text-align: center;
+			line-height: 100%;
+		}
+		& .section-title-bot-line{
+			background-color: $white-color;
+			margin-bottom: 40px;
+		}
+		
+	}
+	& .item-2{
+		background-image: linear-gradient(to bottom, $main-color 0%, $info-color 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	& .item-3{
+		background-image: linear-gradient(to bottom, $main-color 0%, $line-color 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	& .item-4{
+		background-image: linear-gradient(to bottom, $info-color 0%, $main-color 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.slider .slick-dots{
+	position: absolute;
+	width: 1200px;
+	bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slider .slick-dots li{
+	position:relative;
+	display:inline-block;
+	width:280px;
+	height:3px;
+	cursor:pointer;
+	background-color: white;
+	background-size:100% 100%;
+	background-image:linear-gradient(to right, $main-color 100%,transparent 100%);
+	background-repeat:no-repeat;
+	transition: .3s;
+}
+.slick-dots li{
+	&:before{
+		position: absolute;
+		top: 30px;
+		font-size: 24px;
+		font-weight: 800;
+		font-family: $title-main-font;
+		color: $white-color;
+		transition: .3s;
+	}
+	&:after{
+		position: absolute;
+		top: 35px;
+		left: 35px;
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: $title-main-font;
+		color: $white-color;
+		transition: .3s;
+	}
+}
+#slick-slide00{
+	&:before{
+		content: '01';
+	}
+	&:after{
+		content: 'intro';
+	}
+}
+#slick-slide01{
+	&:before{
+		content: '02';
+	}
+	&:after{
+		content: 'work';
+	}
+}
+#slick-slide02{
+	&:before{
+		content: '03';
+	}
+	&:after{
+		content: 'about';
+	}
+}
+#slick-slide03{
+	&:before{
+		content: '04';
+	}
+	&:after{
+		content: 'contacts';
+	}
+}
+
+.slider .slick-dots li:hover{
+	background-color: $main-color;
+	color: $main-color;
+	&:after, &:before{
+		color: $main-color;
+
+	}
+}
+.slider .slick-dots li.slick-active{
+	background-color: $white-color;
+}
+
+.slider .slick-dots li button{
+	display: none !important;
+}
+
+.slider .slick-dots li.slick-active~li{
+	background-size:0% 0%;
+}
+
+.slider .slick-dots li.slick-active{
+
+	animation:right 4s ease-in-out forwards;
+
+}
+
+@keyframes right{
+	0%{
+		background-size:0% 100%;
+	}
+
+	100%{
+		background-size:100% 100%;
+	}
+}

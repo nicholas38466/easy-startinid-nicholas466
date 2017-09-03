@@ -1,0 +1,17 @@
+@import "base/_reset";
+@import "utils/_variables";
+@import "utils/_mixins";
+@import "base/_fonts";
+@import 'icons/_iconfont';
+//@import "components/_jquery.formstyler";
+//@import "components/_fancybox";
+//@import "components/_slick";
+//@import "components/_mCustomScrollbar";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_content";
+@import "layout/_media";
+
+body{
+	font-family: $main-font-bold;
+}

@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>INTERTOP</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="./assets/slick/slick.css">
+	<link rel="stylesheet" href="./assets/slick/slick-theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+</head>
+<body>
+	
+	<header class="header">
+
+		<!--- header__top-->
+
+		<div class="header__top">
+			<a class="main-logo--mobile" href="#">
+				<img src="./images/main-logo--icon.png" alt="">
+			</a>
+			<div class="info-bar">
+				<a href="#" class="info-bar__item" ><b>Бесплатная доставка</b> по Украине</a>
+				<a href="#" class="info-bar__item info-bar__item--reserve" ><b>Бесплатный резерв</b> на 1 день</a>
+				<a href="#" class="info-bar__item info-bar__item--advantage" >Больше преимуществ</a>
+
+				<div class="purchaser">
+					<span class="purchaser__text">Покупателям</span>
+					<span class="icon icon--down-chevron purchaser--chevron"></span>
+					
+					<div class="purchaser__block">
+						<a href="./delivery.html">ДОставка</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sit et accusamus maxime iure doloribus explicabo aliquam debitis obcaecati, nemo?</p>
+					</div>
+				
+				</div>
+				
+				
+				<div class="purchaser">
+					<span class="purchaser__text">Магазины</span>
+					<span class="icon icon--down-chevron purchaser--chevron"></span>
+
+					<div class="purchaser__block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis id nam dicta esse, tenetur enim.</p>
+					</div>
+				
+				</div>
+			</div>
+
+			<!-- users-links -->
+
+			<div class="users-links">
+
+				<a href="#" class="user-link user-link--profile">
+					<span class="icon icon--profile"></span>
+
+					<div class="login-modal login-welcome">
+						<h2 class="login-modal__title">Добро пожаловать</h2>
+						<button class="login-modal__btn--close"></button>
+
+						<div class="login-modal__main-content">
+
+							<a href="#" class="login-welcome__social-link link--facebook">
+								<span class="icon icon--facebook"></span>
+								<span class="login-welcome__social-link--text">Войти через Facebook</span>
+							</a>
+
+							<div class="login-welcome__middle-line">
+								<span class="login-welcome__middle-line--line"></span>
+								<span>или</span>
+								<span class="login-welcome__middle-line--line"></span>
+							</div>
+
+							<a href="#" class="login-welcome__social-link">
+								<span class="icon icon--google-plus"></span>
+								<span class="login-welcome__social-link--text">Gmail</span>
+							</a>
+
+							<a href="#" class="login-welcome__social-link">
+								<span class="icon icon--mail"></span>
+								<span class="login-welcome__social-link--text">E-mail</span>
+							</a>
+
+						</div>
+						
+						<h2 class="login-modal__title">Все сервисы с вами</h2>
+						<a href="#" class="login-welcome__servises-link">Накопительная скидка</a>
+						<a href="#" class="login-welcome__servises-link">Заказ в 1 клик</a>
+						<a href="#" class="login-welcome__servises-link">Вся история заказов</a>
+						<a href="#" class="login-welcome__servises-link">Избранное</a>
+					</div>
+
+					<div class="login-modal login-mail">
+						<h2 class="login-modal__title">Добро пожаловать</h2>
+						<button class="login-modal__btn--close"></button>
+						<div class="login-modal__btn--prev"></div>
+
+						<div class=" login-modal__main-content">
+							<form action="" class="login-modal__form--signin">
+								<label class="login-modal__input--label" for="">E-mail</label>
+								<input class="form__input login-modal__input--signin" type="email" placeholder="login@yahoo.com">
+
+								<label class="login-modal__input--label" for="">Пароль</label>
+								<input class="form__input login-modal__input--signin" type="password">
+
+								<input class="form__checkbox" id="box-m-ligin" type="checkbox" checked="checked">
+								<label for="box-m-ligin">Запомнить меня</label>
+
+								<a href="#" class="link--green">Напомнить пароль</a>
+
+								<input type="submit" value="ВОЙТИ" class="hvr-grow btn--green">
+							</form>
+						</div>
+						
+						<a href="#" class="login-welcome__servises-link link--create-acount">Зарегистрироваться</a>
+					</div>
+
+					<div class="login-modal login-no-pass">
+						<h2 class="login-modal__title">Добро пожаловать</h2>
+						<button class="login-modal__btn--close"></button>
+						<div class="login-modal__btn--prev"></div>
+
+						<div class=" login-modal__main-content">
+							<form action="" class="login-modal__form--no-pass">
+								<label class="login-modal__input--label" for="">E-mail</label>
+								<input class="form__input login-modal__input--signin" type="email" placeholder="login@yahoo.com">
+
+								<input type="submit" value="Отправить пароль" class="hvr-grow btn--green">
+							</form>
+						</div>
+						
+						<a href="#" class="login-welcome__servises-link link--create-acount">Зарегистрироваться</a>
+					</div>
+
+					<div class="login-modal login-acount">
+						<h2 class="login-modal__title">Ваш кабинет</h2>
+						
+
+						<div class=" login-modal__main-content user-acount__links">
+							<a href="#" class="user-acount__link">Заказы</a>
+							<a href="#" class="user-acount__link">Избранное</a>
+							<a href="#" class="user-acount__link">Поддержка</a>
+							<a href="#" class="user-acount__link">Профиль</a>
+							<a href="#" class="user-acount__link">Бонусы</a>
+						</div>
+						
+						<a href="#" class="login-welcome__servises-link user-acount__link--sign-out">Выйти</a>
+					</div>
+					
+				</a>
+
+				<a href="#" class="user-link user-link--folow">
+					<span class="icon icon--heart-dark">
+						<span class="faw-nam">22</span>
+					</span>
+				</a>
+
+				<a href="#" class="user-link user-link--basket">
+					<span class="icon icon--basket">
+						<span class="num-tov">17</span>
+					</span>
+				</a>
+
+			</div>	<!---//END users-links-->
+
+			<div class="lang">
+				<div class="purchaser purchaser__lang">
+					<span class="purchaser__text">укр</span>
+					<span class="icon icon--down-chevron purchaser--chevron"></span>
+				
+					<div class="purchaser__block">
+						<div>
+							<a href="#">рус</a>
+						</div>
+						<div>
+							<a href="#">укр</a>
+						</div>
+					</div>
+				
+				</div>
+			</div>	<!-- //END LANG -->
+
+			<div class="mobile-btn--menu">
+				<span>Каталог</span>
+				<span class="icon icon--down-chevron"></span>
+			</div>
+
+		</div>	<!---//END header__top-->
+
+		<div class="header__middle">
+			
+			<nav class="nav">
+				<a href="./index.html" class="">
+					<img src="./images/main-logo.png" alt="" class="main-logo__photo">
+				</a>
+
+				<div class="nav__link--wrap nav__link--w-shoes">
+					<a href="./catalog.html" class="nav__link ">Женская обувь</a>
+					
+					<div class="nav__modal-menu modal-menu--w-shoes">
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Популярно</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Босоножки</a></li>
+								<li><a class="modal-menu__link" href="#">Ботинки</a></li>
+								<li><a class="modal-menu__link" href="#">Туфли</a></li>
+								<li><a class="modal-menu__link" href="#">Кросовки</a></li>
+								<li><a class="modal-menu__link" href="#">Слипоны</a></li>
+								<li><a class="modal-menu__link" href="#">Мокасины</a></li>
+								<li><a class="modal-menu__link" href="#">Кеды</a></li>
+								<li><a class="modal-menu__link" href="#">Сандали</a></li>
+								<li><a class="modal-menu__link" href="#">Средства по уходу</a></li>
+								<li><a class="modal-menu__link" href="#">Вся обувь</a></li>
+							</ul>
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Бренды</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Braska</a></li>
+								<li><a class="modal-menu__link" href="#">Bronx</a></li>
+								<li><a class="modal-menu__link" href="#">Clarcks</a></li>
+								<li><a class="modal-menu__link" href="#">Ecco</a></li>
+								<li><a class="modal-menu__link" href="#">Geox</a></li>
+								<li><a class="modal-menu__link" href="#">Hogl</a></li>
+								<li><a class="modal-menu__link" href="#">Lacoste</a></li>
+								<li><a class="modal-menu__link" href="#">Marc O'polo</a></li>
+								<li><a class="modal-menu__link" href="#">Skechers</a></li>
+								<li><a class="modal-menu__link" href="#">Все бренды</a></li>
+							</ul>
+											
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title">
+										<span><b>Предпочтения</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Новые колекции</a></li>
+								<li><a class="modal-menu__link" href="#">Акции</a></li>
+								<li><a class="modal-menu__link" href="#">Скидки</a></li>
+								<li><a class="modal-menu__link" href="#">Спорт</a></li>
+								<li><a class="modal-menu__link" href="#">События</a></li>
+								<li><a class="modal-menu__link" href="#">Отпуск</a></li>
+								<li><a class="modal-menu__link" href="#">Осень 2017</a></li>
+								<li><a class="modal-menu__link" href="#">Зима 2017-2018</a></li>
+							</ul>
+
+							<img class="modal-menu__photo" src="./images/modal-w-logo.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="nav__link--wrap nav__link--m-shoes">
+					<a href="#" class="nav__link ">Мужская обувь</a>
+					
+					<div class="nav__modal-menu modal-menu--m-shoes">
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Популярно</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Босоножки</a></li>
+								<li><a class="modal-menu__link" href="#">Ботинки</a></li>
+								<li><a class="modal-menu__link" href="#">Туфли</a></li>
+								<li><a class="modal-menu__link" href="#">Кросовки</a></li>
+								<li><a class="modal-menu__link" href="#">Слипоны</a></li>
+								<li><a class="modal-menu__link" href="#">Мокасины</a></li>
+								<li><a class="modal-menu__link" href="#">Кеды</a></li>
+								<li><a class="modal-menu__link" href="#">Сандали</a></li>
+								<li><a class="modal-menu__link" href="#">Средства по уходу</a></li>
+								<li><a class="modal-menu__link" href="#">Вся обувь</a></li>
+							</ul>
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Бренды</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Braska</a></li>
+								<li><a class="modal-menu__link" href="#">Bronx</a></li>
+								<li><a class="modal-menu__link" href="#">Clarcks</a></li>
+								<li><a class="modal-menu__link" href="#">Ecco</a></li>
+								<li><a class="modal-menu__link" href="#">Geox</a></li>
+								<li><a class="modal-menu__link" href="#">Hogl</a></li>
+								<li><a class="modal-menu__link" href="#">Lacoste</a></li>
+								<li><a class="modal-menu__link" href="#">Marc O'polo</a></li>
+								<li><a class="modal-menu__link" href="#">Skechers</a></li>
+								<li><a class="modal-menu__link" href="#">Все бренды</a></li>
+							</ul>
+											
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title">
+										<span><b>Предпочтения</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Новые колекции</a></li>
+								<li><a class="modal-menu__link" href="#">Акции</a></li>
+								<li><a class="modal-menu__link" href="#">Скидки</a></li>
+								<li><a class="modal-menu__link" href="#">Спорт</a></li>
+								<li><a class="modal-menu__link" href="#">События</a></li>
+								<li><a class="modal-menu__link" href="#">Отпуск</a></li>
+								<li><a class="modal-menu__link" href="#">Осень 2017</a></li>
+								<li><a class="modal-menu__link" href="#">Зима 2017-2018</a></li>
+							</ul>
+
+							<img class="modal-menu__photo" src="./images/modal-m-logo.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="nav__link--wrap nav__link--child-shoes">
+					<a href="#" class="nav__link ">Детская обувь</a>
+					
+					<div class="nav__modal-menu modal-menu--child-shoes">
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Популярно</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Босоножки</a></li>
+								<li><a class="modal-menu__link" href="#">Ботинки</a></li>
+								<li><a class="modal-menu__link" href="#">Туфли</a></li>
+								<li><a class="modal-menu__link" href="#">Кросовки</a></li>
+								<li><a class="modal-menu__link" href="#">Слипоны</a></li>
+								<li><a class="modal-menu__link" href="#">Мокасины</a></li>
+								<li><a class="modal-menu__link" href="#">Кеды</a></li>
+								<li><a class="modal-menu__link" href="#">Сандали</a></li>
+								<li><a class="modal-menu__link" href="#">Средства по уходу</a></li>
+								<li><a class="modal-menu__link" href="#">Вся обувь</a></li>
+							</ul>
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<span><b>Бренды</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Braska</a></li>
+								<li><a class="modal-menu__link" href="#">Bronx</a></li>
+								<li><a class="modal-menu__link" href="#">Clarcks</a></li>
+								<li><a class="modal-menu__link" href="#">Ecco</a></li>
+								<li><a class="modal-menu__link" href="#">Geox</a></li>
+								<li><a class="modal-menu__link" href="#">Hogl</a></li>
+								<li><a class="modal-menu__link" href="#">Lacoste</a></li>
+								<li><a class="modal-menu__link" href="#">Marc O'polo</a></li>
+								<li><a class="modal-menu__link" href="#">Skechers</a></li>
+								<li><a class="modal-menu__link" href="#">Все бренды</a></li>
+							</ul>
+											
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title">
+										<span><b>Предпочтения</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Новые колекции</a></li>
+								<li><a class="modal-menu__link" href="#">Акции</a></li>
+								<li><a class="modal-menu__link" href="#">Скидки</a></li>
+								<li><a class="modal-menu__link" href="#">Спорт</a></li>
+								<li><a class="modal-menu__link" href="#">События</a></li>
+								<li><a class="modal-menu__link" href="#">Отпуск</a></li>
+								<li><a class="modal-menu__link" href="#">Осень 2017</a></li>
+								<li><a class="modal-menu__link" href="#">Зима 2017-2018</a></li>
+							</ul>
+
+							<img class="modal-menu__photo" src="./images/modal-child-logo.jpg" alt="">
+					</div>
+				</div>				
+
+				<a href="#" class="nav__link"><span class="icon icon--soccer-ball"></span>Спорт</a>
+				<div class="nav__link--wrap nav__link--сlothes">
+					<a href="#" class="nav__link ">Одежда</a>
+					
+					<div class="nav__modal-menu modal-menu--сlothes">
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<div class="icon icon--skirt"></div>
+										<span><b>Женская</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Брюки</a></li>
+								<li><a class="modal-menu__link" href="#">Свитер</a></li>
+								<li><a class="modal-menu__link" href="#">Шорты</a></li>
+								<li><a class="modal-menu__link" href="#">Футболка</a></li>
+								<li><a class="modal-menu__link" href="#">Акции</a></li>
+								<li><a class="modal-menu__link" href="#">Скидки</a></li>
+								<li><a class="modal-menu__link" href="#">Новинки</a></li>
+								<li><a class="modal-menu__link" href="#">Осень 2017</a></li>
+								<li><a class="modal-menu__link" href="#">Смотреть все</a></li>
+							</ul>
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title ">
+										<div class="icon icon--shirt"></div>
+										<span><b>Мужская</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Брюки</a></li>
+								<li><a class="modal-menu__link" href="#">Джинсы</a></li>
+								<li><a class="modal-menu__link" href="#">Поло</a></li>
+								<li><a class="modal-menu__link" href="#">Свитер</a></li>
+								<li><a class="modal-menu__link" href="#">Шорты</a></li>
+								<li><a class="modal-menu__link" href="#">Футболки</a></li>
+								<li><a class="modal-menu__link" href="#">Смотреть все</a></li>
+							</ul>
+											
+						<div>
+								<ul class="modal-menu__list">
+									<li>
+										<a href="#" class="modal-menu__list--title ">
+											<div class="icon icon--t-shirt"></div>
+											<span><b>Мальчикам</b></span>
+										</a>
+									</li>
+									<li><a class="modal-menu__link" href="#">Футболки</a></li>
+									<li><a class="modal-menu__link" href="#">Джинсы</a></li>
+									<li><a class="modal-menu__link" href="#">Поло</a></li>
+									<li><a class="modal-menu__link" href="#">Осень 2018</a></li>
+								</ul>
+														
+								<ul class="modal-menu__list">
+									<li><a href="#" class="modal-menu__list--title "><b>Девочкам</b></a></li>
+									<li><a class="modal-menu__link" href="#">Платье</a></li>
+								</ul>
+							
+						</div>
+										
+							<ul class="modal-menu__list">
+								<li><a href="#" class="modal-menu__list--title">
+									<b>Бренды</b></a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Armani Jeans</a></li>
+								<li><a class="modal-menu__link" href="#">Geox</a></li>
+								<li><a class="modal-menu__link" href="#">Timberland</a></li>
+								<li><a class="modal-menu__link" href="#">Napapijri</a></li>
+								<li><a class="modal-menu__link" href="#">Karl Lagerfeld</a></li>
+								<li><a class="modal-menu__link" href="#">Dkny</a></li>
+								<li><a class="modal-menu__link" href="#">Little Marc Jacobs</a></li>
+								<li><a class="modal-menu__link" href="#">Boss</a></li>
+							</ul>
+										
+					</div>
+				</div>
+
+				<div class="nav__link--wrap nav__link--acsess">
+					<a href="#" class="nav__link">Аксессуары</a>
+
+					<div class="nav__modal-menu modal-menu--acsess">
+
+						<div class="acsess--modal-links">
+							<a class="acsess--modal-link acsess--modal-big-link" href="#">
+								<img src="./images/acsess-photo-1.png" alt="">
+								<span class="modal-menu__list--title"><b>Женские шляпы</b></span>
+							</a>
+
+							<div class="acsess--modal-little-links">
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-2.png" alt="">
+									<span>Сумки</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-3.png" alt="">
+									<span>Рюкзаки</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-4.png" alt="">
+									<span>Для девочек</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-5.png" alt="">
+									<span>Набор<br> аксессуаров</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-6.png" alt="">
+									<span>Кошельки</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/acsess-photo-7.png" alt="">
+									<span>Для мальчиков</span>
+								</a>
+
+							</div>
+						</div>
+						<ul class="modal-menu__list">
+							<li><a href="#" class="modal-menu__list--title">
+								<b>Стиль</b></a>
+							</li>
+							<li><a class="modal-menu__link" href="#">Активный</a></li>
+							<li><a class="modal-menu__link" href="#">Класический</a></li>
+							<li><a class="modal-menu__link" href="#">Повседневный</a></li>
+							<li><a class="modal-menu__link" href="#">Уникальный</a></li>
+							<li><a class="modal-menu__link" href="#">Формальный</a></li>
+							<li><a class="modal-menu__link" href="#">Модельный</a></li>
+						</ul>
+										
+					</div>
+				</div>
+
+				<div class="nav__link--wrap nav__link--care">
+					<a href="#" class="nav__link">Уход</a>
+
+					<div class="nav__modal-menu modal-menu--care">
+
+						<div class="care--modal-links">
+							<a class="acsess--modal-link acsess--modal-big-link" href="#">
+								<img src="./images/care-photo.png" alt="">
+								<span class="modal-menu__list--title"><b>Для кожаной обуви</b></span>
+							</a>
+
+							<div class="care--modal-little-links">
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/care-photo-2.png" alt="">
+									<span>Из замши</span>
+								</a>
+
+								<a class="acsess--modal-link" href="#">
+									<img src="./images/care-photo-3.png" alt="">
+									<span>Из текcтиля </span>
+								</a>
+							</div>
+						</div>
+						<ul class="modal-menu__list">
+							<li><a href="#" class="modal-menu__list--title">
+								<b>Популярно</b></a>
+							</li>
+							<li><a class="modal-menu__link" href="#">Аэрозоль</a></li>
+							<li><a class="modal-menu__link" href="#">Жидкий крем</a></li>
+							<li><a class="modal-menu__link" href="#">Дезодорант</a></li>
+							<li><a class="modal-menu__link" href="#">Ложка</a></li>
+							<li><a class="modal-menu__link" href="#">Набор для чистки</a></li>
+							<li><a class="modal-menu__link" href="#"><b>Смотреть все</b></a></li>
+						</ul>
+
+						<ul class="modal-menu__list">
+							<li><a href="#" class="modal-menu__list--title">
+								<b>Бренд</b></a>
+							</li>
+							<li><a class="modal-menu__link" href="#">Ecco</a></li>
+							<li><a class="modal-menu__link" href="#">Timberland</a></li>
+							<li><a class="modal-menu__link" href="#">Collonil</a></li>
+						</ul>
+										
+					</div>
+				</div>
+
+				<a href="#" class="nav__link">Бренды</a>
+
+				<div class="nav__link--wrap nav__link--outlet">
+					<a href="#" class="nav__link  nav__link--red">OUTLET %</a>
+					
+					<div class="nav__modal-menu modal-menu--outlet">
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title title--red">
+										<div class="icon icon--skirt"></div>
+										<span><b>Женская</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Брюки</a></li>
+								<li><a class="modal-menu__link" href="#">Свитер</a></li>
+								<li><a class="modal-menu__link" href="#">Шорты</a></li>
+								<li><a class="modal-menu__link" href="#">Футболка</a></li>
+								<li><a class="modal-menu__link" href="#">Акции</a></li>
+								<li><a class="modal-menu__link" href="#">Скидки</a></li>
+								<li><a class="modal-menu__link" href="#">Новинки</a></li>
+								<li><a class="modal-menu__link" href="#">Осень 2017</a></li>
+								<li><a class="modal-menu__link" href="#">Смотреть все</a></li>
+							</ul>
+						
+							<ul class="modal-menu__list">
+								<li>
+									<a href="#" class="modal-menu__list--title title--red">
+										<div class="icon icon--shirt"></div>
+										<span><b>Мужская</b></span>
+									</a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Брюки</a></li>
+								<li><a class="modal-menu__link" href="#">Джинсы</a></li>
+								<li><a class="modal-menu__link" href="#">Поло</a></li>
+								<li><a class="modal-menu__link" href="#">Свитер</a></li>
+								<li><a class="modal-menu__link" href="#">Шорты</a></li>
+								<li><a class="modal-menu__link" href="#">Футболки</a></li>
+								<li><a class="modal-menu__link" href="#">Смотреть все</a></li>
+							</ul>
+											
+						<div>
+								<ul class="modal-menu__list">
+									<li>
+										<a href="#" class="modal-menu__list--title title--red">
+											<div class="icon icon--t-shirt"></div>
+											<span><b>Мальчикам</b></span>
+										</a>
+									</li>
+									<li><a class="modal-menu__link" href="#">Футболки</a></li>
+									<li><a class="modal-menu__link" href="#">Джинсы</a></li>
+									<li><a class="modal-menu__link" href="#">Поло</a></li>
+									<li><a class="modal-menu__link" href="#">Осень 2018</a></li>
+								</ul>
+														
+								<ul class="modal-menu__list">
+									<li><a href="#" class="modal-menu__list--title title--red"><b>Девочкам</b></a></li>
+									<li><a class="modal-menu__link" href="#">Платье</a></li>
+								</ul>
+							
+						</div>
+										
+							<ul class="modal-menu__list">
+								<li><a href="#" class="modal-menu__list--title">
+									<b>Бренды</b></a>
+								</li>
+								<li><a class="modal-menu__link" href="#">Armani Jeans</a></li>
+								<li><a class="modal-menu__link" href="#">Geox</a></li>
+								<li><a class="modal-menu__link" href="#">Timberland</a></li>
+								<li><a class="modal-menu__link" href="#">Napapijri</a></li>
+								<li><a class="modal-menu__link" href="#">Karl Lagerfeld</a></li>
+								<li><a class="modal-menu__link" href="#">Dkny</a></li>
+								<li><a class="modal-menu__link" href="#">Little Marc Jacobs</a></li>
+								<li><a class="modal-menu__link" href="#">Boss</a></li>
+							</ul>
+										
+					</div>
+				</div>
+				
+			</nav>
+		</div>	<!---//END header__middle-->
+
+		<div class="header__bottom">
+			<div id="title-search" class="search">
+				<form id="intertop_search_form" class="home-search-form" action="#">
+					<input class="search-inp" id="title-search-input" value="" maxlength="50" autocomplete="off"  placeholder="сапоги ecco gortex">
+					<button class="icon icon--search btn--serch" type="submit"></button>
+				</form>
+				
+			</div>
+			<div class="search__info">
+					<span class="search__info--title">Часто ищут:</span>
+					<span class="search__info--item">туфли</span>
+					<span class="search__info--item">босоножки</span>
+					<span class="search__info--item">сандали</span>
+					<span class="search__info--item">балетки</span>
+					<span class="search__info--item">кеды</span>
+				</div>
+
+			<div class="gift">
+				<span class="icon icon--gift2"></span>
+				<span class="gift__text">При покупке 2 000 грн — средство по уходу в подарок</span>
+			</div>
+
+		</div>	<!---//END header__botom-->
+
+	</header>	<!---//END header-->
+
+	<!-- blog-publication -->
+
+	
+		<div class="blog-publication">
+			<div class="blog-publication__title">
+				<div>
+					 <h2 class="blog-publication__title--main link-green">
+					 	<a href=""><span>Блог о современном стиле жизни</span></a>
+					 </h2>
+				</div>
+				<div>
+					<h1 class="blog-publication__title--post">Как Ecco покорили Бессарабию</h1>
+				</div>
+			</div>
+			<img src="./images/blog-public-Banner.jpg" alt="" class="blog-publication__banner">
+			<div class="blog-publication__content">
+				
+				<div class="blog-publication__links">
+					<a href="#" class="inter-link"><span>Спорт</span></a>
+					<a href="#" class="inter-link"><span>Кросовки</span></a>
+					<a href="#" class="inter-link"><span>Sneakers</span></a>
+				</div>
+
+				<div class="blog-publication__text">
+					<p>Мы решили устроить собственный краш-тест для обуви ECCO: Посмотрим, настолько ли они такие прочные и неубиваемые, как говорят.</p>
+					<p><b>Тест 1.</b> На официальном сайте создатели ECCO с гордостью заявляют: «Почти всю нашу обувь можно перекручивать и изгибать до бесконечности» </p>
+					<p>Мы мечтали сделать это. Открыли первую попавшуюся коробку с обувью, вынули ботинок и перегнули его пополам. Потом смяли, перекрутили, снова смяли. Ботинок вел себя податливо, на нем не осталось никаких следов наших издевательств.  </p>
+					<p><b>Вывод:</b> Балетки и туфли ECCO действительно можно сжимать, перегибать и скручивать в бараний рог. Подошвы кроссовок и сандалий достаточно мягкие, но перекручивать себя не дадут: их задача – крепко держать стопу.</p>
+				</div>
+
+				<img src="./images/video_800-450.jpg" alt="" class="blog-publication__banner">
+
+				<div class="blog-publication__text">
+					<p><b>Тест 2.</b> ECCO склеивают подошвы методом вулканизации – то есть, обрабатывают каучук составом, который прогревает его и делает упругим и прочным. Так автомобилисты чинят проколы на автомобильных камерах. Естественно, мы захотели оторвать подошву у <a href="#" class="link-green">сандалии ECCO</a>, но нам это не удалось. В результате было сломано два ногтя, но ни один ботинок не пострадал. Подошва не отстала от основы ни на долю миллиметра.</p>
+					<p><b>Вывод:</b> Сложно представить себе ту силу, которая оторвет подошву от сандалии ECCO. Можно смело застрять между двух камней и рывком высвободить ногу: с подошвой, ничего не случится.</p>
+				</div>
+
+				<img src="./images/blog-banner-1.jpg" alt="" class="blog-publication__banner">
+
+				<div class="blog-publication__text">
+					<p><b>Тест 3.</b>  Дальше ECCO говорят: «Для изготовления подошв мы выбираем самые легкие материалы»</p>
+					<p>Для этого эксперимента нам понадобился доброволец – восьмилетний Максим. Он принес нам пять пар своей любимой обуви, и мы взвесили по одному ботинку из каждой пары на контрольных весах. Затем взвесили две пары Ecco, которые Максиму тоже понравились. Все ботинки размера 31. Результаты смотрите ниже.</p>
+					<p><b>Вывод:</b> Летний кроссовок ECCO – один из самых легких в своей нише. Сандалия ECCO, несмотря на внушительную подошву, значительно легче других аналогичных летних ботинок.</p>
+				</div>
+
+				<img src="./images/blog-banner-2.jpg" alt="" class="blog-publication__banner">
+
+				<div class="blog-publication__text">
+					<p><b>Тест 4.</b>  «Материалы подвергаются специальной обработке, приобретая большую способность поглощать толчки».</p>
+					<p>Для этого эксперимента мы позвали добровольца Максима в нашу фотостудию, попросили его надеть кроссовки ECCO, разбежаться и перепрыгнуть пару коробок. Доброволец охотно прыгал полчаса, после чего отметил, что его ноги действительно не устали от ударов об пол. </p>
+					<p><b>Вывод:</b> В обуви ECCO приятно и удобно прыгать: Толчки не причиняют неудобства.</p>
+				</div>
+
+				<div>
+					<span class="publication__sub-title">С этой публикацией связано</span>
+
+				</div>
+
+				<div class="publication-comments">
+					<span class="publication__sub-title">2 комментария</span>
+					<form action="" class="publication-comments__form">
+						<span class="form__title">Прокомментируйте или задайте вопрос</span>
+						<label for="" class="form__label">Комментарий</label>
+						<textarea name="" id="" class="form__input form__input--t-area"></textarea>
+						<label for="" class="form__label">Ваше имя</label>
+						<input type="text" class="form__input">
+						<label for="" class="form__label">Эл. почта<span class="form__label--why">для ответа</span></label>
+						<input type="email" class="form__input">
+						
+
+						<button class="form__btn">
+							<span >Отправить комментарий</span>
+							<span class="icon icon--icon-sent"></span>
+						</button>
+					</form>
+
+					<div class="publication-comments__one-com">
+						<div class="one-com__info">
+							<span>Александра, </span>
+							<span> 11 ноя 2016</span>
+						</div>
+						<div class="one-com__text">
+							<span>ECCO склеивают подошвы методом вулканизации – то есть, обрабатывают каучук составом, который прогревает его и делает упругим и прочным. Так автомобилисты чинят проколы на автомобильных камерах.</span>
+						</div>
+
+
+						<div class="publication-comments__admin-com">
+							<div class="one-com__info">
+								<span class="one-com__info--admin">Ответ администратора</span>
+								<span>11 ноя 2016</span>
+							</div>
+							<div class="one-com__text">
+								<span>Подошва не отстала от основы ни на долю миллиметра.</span>
+							</div>
+
+							<button class="btn--black">
+								<span>Ответить</span>
+								<span class="icon icon--arrow-sent"></span>
+							</button>
+						</div>
+					</div>
+
+					<div class="publication-comments__one-com">
+						<div class="one-com__info">
+							<span>Иванна, </span>
+							<span>5 ноя 2016</span>
+						</div>
+						<div class="one-com__text">
+							<span>Када на них будет скидка от 50% и больше, чтоб уже можна было купить? А то больше половины размеров нету.</span>
+						</div>
+						<button class="btn--black">
+							<span>Ответить</span>
+							<span class="icon icon--arrow-sent"></span>
+						</button>
+					</div>
+
+				</div>
+
+				<div class="recomend-posts__wrap">
+					<span class="publication__sub-title">Рекомендуем по этой теме</span>
+					<div class="recomend-posts">
+						<a href="#" class="recomend-posts__link ">
+							<img class="recomend-posts__banner" src="./images/post-pic1.jpg" alt="">
+							<span class="recomend-posts__link--title">В INTERTOP прошел весенний Soping Fest!</span>
+						</a>
+						<a href="#" class="recomend-posts__link ">
+							<img class="recomend-posts__banner" src="./images/post-pic2.jpg" alt="">
+							<span class="recomend-posts__link--title">Iрина Данилевська в ECCO</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="folow-links--container" >
+				<div class="folow-links-wrap" style="max-width: 800px;">
+					<div class="folow-links__title"><span>Следите за стилем жизни вместе с 1200 читателями</span></div>
+					<div class="folow-links">
+						<a href="#" class="icon icon--facebook"></a>
+						<a href="#" class="icon icon--instagram"></a>
+						<a href="#" class="icon icon--google-plus"></a>
+						<a href="#" class="icon icon--youtube"></a>
+
+						<form action="" class="form--folow">
+							<input type="email" placeholder="E-mail" class="form__input">
+							<input type="submit" value="Следить" class="btn--green">
+						</form>
+					</div>
+					<div>
+						<a href="#" class="link-green"><span>Станьте автором</span></a>
+						<span>и получите специальный промокод на следующую покупку</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	
+
+	<!-- END blog-publication -->
+
+<!-- FOOTER -->
+	<footer class="footer">
+
+	<!-- inter-links -->
+		<div class="inter-links">
+			<div class="inter-links__block">
+				<div class="inter-links__block--logo logo--shoes"></div>
+				<h4 class="inter-links__block--title">Выбирайте</h4>	
+			
+				<div class="inter-links--groups">
+					<a class="inter-link" href="#">Женская обувь</a>
+					<a class="inter-link" href="#">Мужская обувь</a>
+					<a class="inter-link" href="#">Детская обувь</a>
+					<a class="inter-link" href="#">Спорт</a>
+					<a class="inter-link" href="#">Одежда</a>
+					<a class="inter-link" href="#">Аксессуары</a>
+					<a class="inter-link" href="#">Уход</a>
+					<a class="inter-link" href="#">Бренды</a>
+					<a class="inter-link" href="#">OUTLET %</a>
+				</div>
+			
+				<div class="inter-links--brands">
+					<a class="inter-link inter-link--brand" href="#">Ecco</a>
+					<a class="inter-link inter-link--brand" href="#">Clarks</a>
+					<a class="inter-link inter-link--brand" href="#">Braska</a>
+					<a class="inter-link inter-link--brand" href="#">Geox</a>
+					<a class="inter-link inter-link--brand" href="#">Bronx</a>
+					<a class="inter-link inter-link--brand" href="#">Lacoste</a>
+					<a class="inter-link inter-link--brand" href="#">Mark O’Polo</a>
+					<a class="inter-link " href="#">еще...</a>
+				</div>
+			
+			</div>
+		
+			<div class="inter-links__block block--to-econom">
+				<div class="inter-links__block--logo logo--wallet"></div>
+				<h4 class="inter-links__block--title">Экономьте</h4>	
+		
+				<div class="inter-links--economy">
+					<a class="inter-link" href="#">Акции и скидки</a>
+					<a class="inter-link" href="#">Дисконтная программа</a>
+					<a class="inter-link" href="#">Промо-код</a>
+				</div>
+						
+			</div>
+		
+			<div class="inter-links__block block--to-client">
+				<div class="inter-links__block--logo logo--people"></div>
+				<h4 class="inter-links__block--title">Покупателям</h4>	
+		
+				<div class="inter-links--purchaser">
+					<a class="inter-link" href="#">Резерв</a>
+					<a class="inter-link" href="#">Доставка</a>
+					<a class="inter-link" href="#">Самовывоз</a>
+					<a class="inter-link" href="#">Возврат</a>
+					<a class="inter-link" href="#">Вопросы и ответы</a>
+					<a class="inter-link" href="#">еще...</a>
+				</div>
+			
+			</div>
+		
+			<div class="inter-links__block block--inter">
+				<div class="inter-links__block--logo logo--inter"></div>
+				<h4 class="inter-links__block--title">INTERTOP</h4>	
+			
+				<div class="inter-links--intertop">
+					<a class="inter-link" href="#">Магазины</a>
+					<a class="inter-link" href="#">Сервис</a>
+					<a class="inter-link" href="#">Отзывы</a>
+					<a class="inter-link" href="#">Работа</a>
+					<a class="inter-link" href="#">Контакты</a>
+					<a class="inter-link inter-link--tel" href="tel:0800309919">0 800 30-99-19</a>
+					<a class="inter-link inter-link--mail" href="mailto:info@intertop.ua">info@intertop.ua</a>
+				</div>	
+			
+			</div>
+		</div>
+
+	<!--//END  inter-links -->
+
+		<div class="social-links">
+			<div class="social-links__block">
+				<a href="#" class="icon icon--facebook"></a>
+				<div class="social-link--wrap">
+					<div>149 тыс. подписчиков</div>
+					<a class="social-link" href="#">
+						<span class="icon icon--rss-symbol"></span>
+						<span style="text-decoration: underline;">Следить</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="social-links__block">
+				<a href="#" class="icon icon--instagram"></a>
+				<div class="social-link--wrap">
+					<div>4 тыс. подписчиков</div>
+					<a class="social-link" href="#">
+						<span class="icon icon--rss-symbol"></span>
+						<span style="text-decoration: underline;">Следить</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="social-links__block">
+				<a href="#" class="icon icon--google-plus"></a>
+				<div class="social-link--wrap">
+					<div>2 тыс. подписчиков</div>
+					<a class="social-link link--bused" href="#">
+						<span>Подписаться</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="social-links__block">
+				<a href="#" class="icon icon--mail"></a>
+				<div class="social-link--wrap">
+					<div>Скидки и акции на почту</div>
+					<a class="social-link link--bused" href="#">
+						<span>Подписаться</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+<!-- END FOOTER -->
+
+<script src="./js/product-tabs.js"></script>
+</body>
+</html>

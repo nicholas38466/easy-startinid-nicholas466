@@ -1,0 +1,55 @@
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  transform: scale(1.1);
+}
+/*hvr-for CARD*/
+.hvr-grow--card {
+  
+  // transform: perspective(1px) translateZ(0);
+  // box-shadow: 0 0 1px transparent;
+  transition-duration: .5s;
+  transition-property: transform;
+}
+.hvr-grow--card:hover, .hvr-grow--card:focus, .hvr-grow--card:active {
+  transform: scale(1.1);
+}
+/* Sweep To Right */
+.hvr-sweep {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+}
+.hvr-sweep:hover, .hvr-sweep:focus, .hvr-sweep:active {
+  color: white;
+}
+.hvr-sweep:hover:after, .hvr-sweep:focus:after, .hvr-sweep:active:after {
+  transform: scaleX(1);
+}
